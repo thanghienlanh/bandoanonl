@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+
+    <title>Trở về tuổi thơ</title>
+    <link rel="stylesheet" href="phongcach.css">
+    <script src="dangki.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="brand-info">
+                <img src="logotrasua.jpg" alt="Trở về tuổi thơ Logo" class="logo">
+                <div class="animated-text">
+                    Hệ thống Trà Sữa Trở về tuổi thơ
+                </div>
+
+            </div>
+
+            <div class="contact-info">
+                <p><i class="far fa-clock"></i> 8:00-22:30 | Hotline: 0338828125</p>
+            </div>
+            <div class="user-options">
+                <p id="welcome-message">Xin chào, khách!</p>
+                <a href="dangki.html" onclick="toggleLoginRegisterForm()">Đăng nhập / Đăng ký</a>
+                <a href="cart.html" onclick="chuyenDenTrangGioHang()">Giỏ hàng / Sản phẩm</a>
+                <div id="cart-items" style="display: none;"></div>
+                <p id="cart-total" style="display: none;"></p>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home" onclick="showSection('home')">Trang chủ</a></li>
+                <li class="dropdown">
+                    <a href="#">Menu</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#" onclick="showSection('tra-sua')">Trà sữa</a></li>
+                        <li><a href="#" onclick="showSection('nuoc-ep')">Nước ép</a></li>
+                        <li><a href="#" onclick="showSection('an-vat')">Ăn vặt</a></li>
+                    </ul>
+                </li>
+                <li><a href="cuahang.html">Cửa hàng</a></li>
+                <li><a href="sukienkhuyenmai.html">Sự kiện khuyến mãi </a></li>
+                <li><a href="tuyendung.html">Tuyển dụng</a></li>
+                <li><a href="vechungtoi.html" onclick="showSection('about-us')">Về chúng tôi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section hero"
+        style="background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjA3d2o3d285NG9tbHhhb2YyZmlwNHM2enMwcDYzNWRicjYyN2I5NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/unysA8Hqx7IHAK9exG/giphy.webp');">
+        <div class="hero-content">
+            <h2>Chào Mừng Trở về tuổi thơ</h2>
+            <p>Chào mừng đến với quán chúng tôi</p>
+            <button onclick="batDauDatHang()">Đặt Hàng Ngay</button>
+        </div>
+    </section>
+
+
+    <section id="tra-sua" class="section menu-section" style="display: none;">
+        <h2>Thực Đơn Trà Sữa</h2>
+
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="https://ghiennauan.info/wp-content/uploads/2022/03/cach-nau-tra-sua-tran-chau-duong-den.jpg"
+                    alt="Trà Sữa Đường Đen">
+                <h3>Trà Sữa Đường Đen</h3>
+                <p>Giá: 88.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Trà Sữa Đường Đen', 88000, 'https://ghiennauan.info/wp-content/uploads/2022/03/cach-nau-tra-sua-tran-chau-duong-den.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://bepos.io/wp-content/uploads/2023/01/kd3.jpg" alt="Trà Sữa Dừa">
+                <h3>Trà Sữa Dừa</h3>
+                <p>Giá: 90.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Trà Sữa Dừa', 90000, 'https://bepos.io/wp-content/uploads/2023/01/kd3.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://dayphache.edu.vn/wp-content/uploads/2018/02/tra-sua-matcha.jpg" alt="Trà Sữa Matcha">
+                <h3>Trà Sữa Matcha</h3>
+                <p>Giá: 85.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Trà Sữa Matcha', 85000, 'https://dayphache.edu.vn/wp-content/uploads/2018/02/tra-sua-matcha.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            
+            <div class="menu-item">
+                <img src="https://cdn.nguyenkimmall.com/images/detailed/746/cach-lam-tra-sua-dau-5.jpg.jpg"
+                    alt="Trà Sữa Dâu Tây">
+                <h3>Trà Sữa Dâu Tây</h3>
+                <p>Giá: 90.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Trà Sữa Dâu Tây', 90000, 'https://cdn.nguyenkimmall.com/images/detailed/746/cach-lam-tra-sua-dau-5.jpg.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+          
+
+            <div class="menu-item">
+                <img src="https://kinhdofood.com/wp-content/uploads/2022/05/Cach-lam-tra-sua-kiwi-img_627486e2d1041.png"
+                    alt="Trà Sữa Kiwi">
+                <h3>Trà Sữa Kiwi</h3>
+                <p>Giá: 88.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Trà Sữa Kiwi', 88000, 'https://kinhdofood.com/wp-content/uploads/2022/05/Cach-lam-tra-sua-kiwi-img_627486e2d1041.png')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+
+            <div class="menu-item">
+                <img src="https://cdn.tgdd.vn/2021/06/CookProductThumb/620-620x620-73.jpg" alt="Trà Sữa Khoai Môn">
+                <h3>Trà Sữa Khoai Môn</h3>
+                <p>Giá: 90.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Trà Sữa Khoai Môn', 90000, 'https://cdn.tgdd.vn/2021/06/CookProductThumb/620-620x620-73.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="http://file.hstatic.net/1000339999/article/untitled_design_510df43ecd1344ca9fbcdd7daad4cd63.png"
+                    alt="Trà Sữa Earl Grey">
+                <h3>Trà Sữa Earl Grey</h3>
+                <p>Giá: 95.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Trà Sữa Earl Grey', 95000, 'http://file.hstatic.net/1000339999/article/untitled_design_510df43ecd1344ca9fbcdd7daad4cd63.png')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://theteahouse.com.vn/wp-content/uploads/2021/08/tra-dao-tth-1200x1200.png"
+                    alt="Trà Sữa Hồng Đào">
+                <h3>Trà Sữa Hồng Đào</h3>
+                <p>Giá: 88.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Trà Sữa Hồng Đào', 88000, 'https://theteahouse.com.vn/wp-content/uploads/2021/08/tra-dao-tth-1200x1200.png')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://bizweb.dktcdn.net/100/004/714/files/cach-lam-tra-sua-olong-nhai-1-jpeg.jpg?v=1682424915375"
+                    alt="Trà Sữa Ô Long">
+                <h3>Trà Sữa Ô Long</h3>
+                <p>Giá: 92.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Trà Sữa Ô Long', 92000, 'https://bizweb.dktcdn.net/100/004/714/files/cach-lam-tra-sua-olong-nhai-1-jpeg.jpg?v=1682424915375')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://kinhdofood.com/wp-content/uploads/2022/06/cach-lam-tra-sua-thai-img_62b97785ddb08-1000x563.jpg"
+                    alt="Trà Sữa Thái Xanh">
+                <h3>Trà Sữa Thái Xanh</h3>
+                <p>Giá: 88.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Trà Sữa Thái Xanh', 88000, 'https://kinhdofood.com/wp-content/uploads/2022/06/cach-lam-tra-sua-thai-img_62b97785ddb08-1000x563.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://cdn.tgdd.vn/2021/08/CookRecipe/Avatar/tra-sua-socola-tran-chau-thumbnail.jpg"
+                    alt="Trà Sữa Socola">
+                <h3>Trà Sữa Socola</h3>
+                <p>Giá: 92.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Trà Sữa Socola', 92000, 'https://cdn.tgdd.vn/2021/08/CookRecipe/Avatar/tra-sua-socola-tran-chau-thumbnail.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://sieuthinguyenlieu.com/assets/uploads/images/bUFB6cf0o0xr_blueberry-smoothie-master.jpg"
+                    alt="Trà Sữa Việt Quất">
+                <h3>Trà Sữa Việt Quất</h3>
+                <p>Giá: 85.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Trà Sữa Việt Quất', 85000, 'https://sieuthinguyenlieu.com/assets/uploads/images/bUFB6cf0o0xr_blueberry-smoothie-master.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+           
+            <div class="menu-item">
+                <img src="https://thegioiamthuc.com/wp-content/uploads/2018/03/tu-lam-tra-sua-suong-sao-cuc-ngon-tai-nha-1.jpg"
+                    alt="Trà Sữa Sương Sáo">
+                <h3>Trà Sữa Sương Sáo</h3>
+                <p>Giá: 90.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Trà Sữa Sương Sáo', 90000, 'https://thegioiamthuc.com/wp-content/uploads/2018/03/tu-lam-tra-sua-suong-sao-cuc-ngon-tai-nha-1.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://t.vietgiaitri.com/2024/6/9/cach-pha-che-tra-sua-tran-chau-xoai-ngon-ngot-thom-mat-uong-cang-me-600x432-47c-7196433.webp"
+                    alt="Trà Sữa Trân Châu Xoài">
+                <h3>Trà Sữa Trân Châu Xoài</h3>
+                <p>Giá: 85.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Trà Sữa Trân Châu Xoài', 85000, 'https://t.vietgiaitri.com/2024/6/9/cach-pha-che-tra-sua-tran-chau-xoai-ngon-ngot-thom-mat-uong-cang-me-600x432-47c-7196433.webp')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://daylambanhngon.com/public/backend/filemanager/source/trasuamatchadaudo/9cc108fd5f8513df18fc8f42f7effdeb.jpg"
+                    alt="Trà Sữa Matcha Đậu Đỏ">
+                <h3>Trà Sữa Matcha Đậu Đỏ</h3>
+                <p>Giá: 88.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Trà Sữa Matcha Đậu Đỏ', 88000, 'https://daylambanhngon.com/public/backend/filemanager/source/trasuamatchadaudo/9cc108fd5f8513df18fc8f42f7effdeb.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+           
+           
+        </div>
+    </section>
+    <section id="nuoc-ep" class="section menu-section" style="display: none;">
+        <h2>Thực Đơn Nước Ép</h2>
+        <div class="menu-container">
+            <div id="nuoc-ep-tao" class="menu-item">
+                <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/800x0/https://cms-prod.s3-sgn09.fptcloud.com/nuoc_ep_tao_co_tac_dung_gi_nuoc_ep_tao_mix_voi_gi_cho_giau_dinh_duong_1_9ad02a8c5f.jpg"
+                    alt="Nước Ép Táo">
+                <h3>Nước Ép Táo</h3>
+                <p>Giá: 30.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Nước Ép Táo', 30000, 'https://cdn.nhathuoclongchau.com.vn/unsafe/800x0/https://cms-prod.s3-sgn09.fptcloud.com/nuoc_ep_tao_co_tac_dung_gi_nuoc_ep_tao_mix_voi_gi_cho_giau_dinh_duong_1_9ad02a8c5f.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <div id="nuoc-ep-nho" class="menu-item">
+                <img src="https://truejuice.vn/articles/wp-content/uploads/2021/04/nuoc-ep-nho-co-tac-dung-gi-1024x683.jpg"
+                    alt="Nước Ép Nho">
+                <h3>Nước Ép Nho</h3>
+                <p>Giá: 34.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Nước Ép Nho', 34000, 'https://truejuice.vn/articles/wp-content/uploads/2021/04/nuoc-ep-nho-co-tac-dung-gi-1024x683.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+
+            <div id="nuoc-ep-dau" class="menu-item">
+                <img src="https://truejuice.vn/articles/wp-content/uploads/2021/05/nuoc-ep-dau-co-tac-dung-gi.jpg"
+                    alt="Nước Ép Dâu">
+                <h3>Nước Ép Dâu</h3>
+                <p>Giá: 32.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Nước Ép Dâu', 32000, 'https://truejuice.vn/articles/wp-content/uploads/2021/05/nuoc-ep-dau-co-tac-dung-gi.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <div id="nuoc-ep-buoi" class="menu-item">
+                <img src="https://truejuice.vn/articles/wp-content/uploads/2021/05/nuoc-ep-buoi-xanh-truejuice.jpg"
+                    alt="Nước Ép Bưởi">
+                <h3>Nước Ép Bưởi</h3>
+                <p>Giá: 35.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Nước Ép Bưởi', 35000, 'https://truejuice.vn/articles/wp-content/uploads/2021/05/nuoc-ep-buoi-xanh-truejuice.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://truejuice.vn/articles/wp-content/uploads/2021/05/nuoc-ep-thanh-long-mix-dua-truejuice.jpg"
+                    alt="Nước Ép Thanh Long">
+                <h3>Nước Ép Thanh Long</h3>
+                <p>Giá: 28.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Nước Ép Thanh Long', 28000, 'https://truejuice.vn/articles/wp-content/uploads/2021/05/nuoc-ep-thanh-long-mix-dua-truejuice.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+            <div id="nuoc-ep-le" class="menu-item">
+                <img src="https://truejuice.vn/articles/wp-content/uploads/2021/04/nuoc-ep-le-giam-can.jpg"
+                    alt="Nước Ép Lê">
+                <h3>Nước Ép Lê</h3>
+                <p>Giá: 30.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Nước Ép Lê', 30000, 'https://truejuice.vn/articles/wp-content/uploads/2021/04/nuoc-ep-le-giam-can.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+            <div id="nuoc-ep-ca-rot" class="menu-item">
+                <img src="https://bizweb.dktcdn.net/100/421/036/files/nguyen-lieu-che-bien-nuoc-ep-carot.jpg?v=1617093099366"
+                    alt="Nước Ép Cà Rốt">
+                <h3>Nước Ép Cà Rốt</h3>
+                <p>Giá: 28.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Nước Ép Cà Rốt', 28000, 'https://bizweb.dktcdn.net/100/421/036/files/nguyen-lieu-che-bien-nuoc-ep-carot.jpg?v=1617093099366')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://file.hstatic.net/200000031322/file/9_93026d56b61f46c1a435755ddee3d3cd_grande.gif" alt="Nước Ép Cam">
+                <h3>Nước Ép Cam</h3>
+                <p>Giá: 30.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Nước Ép Cam', 30000, 'https://file.hstatic.net/200000031322/file/9_93026d56b61f46c1a435755ddee3d3cd_grande.gif')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+    
+          
+            <div class="menu-item">
+                <img src="https://cookbeo.com/media/2020/12/nuoc-ep-dua-hau/coc-nuoc-ep-dua-hau.jpg"
+                    alt="Nước Ép Dưa Hấu">
+                <h3>Nước Ép Dưa Hấu</h3>
+                <p>Giá: 25.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Nước Ép Dưa Hấu', 25000, 'https://cookbeo.com/media/2020/12/nuoc-ep-dua-hau/coc-nuoc-ep-dua-hau.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+            <div id="nuoc-ep-ca-rot" class="menu-item">
+                <img src="https://tandoorvietnam.com/wp-content/uploads/2020/06/Pineapple-juice.jpg"
+                    alt="Nước Ép Thơm">
+                <h3>Nước Ép Thơm</h3>
+                <p>Giá: 28.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Nước Ép Cà Rốt', 28000, 'https://tandoorvietnam.com/wp-content/uploads/2020/06/Pineapple-juice.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+              <div class="menu-item">
+                <img src="https://truejuice.vn/articles/wp-content/uploads/2021/05/nuoc-ep-chanh-day-ho-tro-giam-viem-1024x963.jpg"
+                    alt="Nước Ép Lê Táo Chanh Dây">
+                <h3>Nước Ép Lê Táo Chanh Dây</h3>
+                <p>Giá: 45.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Nước Ép Lê Táo Chanh Dây', 45000, 'https://truejuice.vn/articles/wp-content/uploads/2021/05/nuoc-ep-chanh-day-ho-tro-giam-viem-1024x963.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+ 
+            <div class="menu-item">
+                <img src="https://cdn.pastaxi-manager.onepas.vn/content/uploads/articles/hoamkt35/Blog/N%C6%B0%E1%BB%9Bc%20%C3%A9p/New%20folder%20(2)/nuoc-ep-coc.jpg"
+                    alt="Nước Ép Cói Xay">
+                <h3>Nước Ép Cói Xay</h3>
+                <p>Giá: 28.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Nước Ép Cói Xay', 28000, 'https://cdn.pastaxi-manager.onepas.vn/content/uploads/articles/hoamkt35/Blog/N%C6%B0%E1%BB%9Bc%20%C3%A9p/New%20folder%20(2)/nuoc-ep-coc.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <!-- Món 7 -->
+            <div class="menu-item">
+                <img src="https://truejuice.vn/articles/wp-content/uploads/2021/03/nuoc-ep-tao-ca-rot-truejuice-1024x576.jpg"
+                    alt="Nước Ép Táo Bơ">
+                <h3>Nước Ép Táo Bơ</h3>
+                <p>Giá: 40.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Nước Ép Táo Bơ', 40000, 'https://truejuice.vn/articles/wp-content/uploads/2021/03/nuoc-ep-tao-ca-rot-truejuice-1024x576.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <!-- Món 8 -->
+            <div class="menu-item">
+                <img src="https://cdn.nguyenkimmall.com/images/detailed/598/dep-da-dep-dang-chi-voi-nuoc-ep-rau-can-tay-thumbnail.jpg"
+                    alt="Nước Ép Cần Tây">
+                <h3>Nước Ép Cần Tây</h3>
+                <p>Giá: 38.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Nước Ép Cần Tây', 38000, 'https://cdn.nguyenkimmall.com/images/detailed/598/dep-da-dep-dang-chi-voi-nuoc-ep-rau-can-tay-thumbnail.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://truejuice.vn/articles/wp-content/uploads/2021/04/cach-lam-nuoc-ep-nho-tu-may-xay-sinh-to.jpg"
+                    alt="Nước Ép Nho Đen">
+                <h3>Nước Ép Nho Đen</h3>
+                <p>Giá: 32.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Nước Ép Nho Đen', 32000, 'https://truejuice.vn/articles/wp-content/uploads/2021/04/cach-lam-nuoc-ep-nho-tu-may-xay-sinh-to.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+ 
+        
+
+        </div>
+    </section>
+
+
+    <!-- Thực Đơn Ăn Vặt -->
+    <section id="an-vat" class="section menu-section" style="display: none;">
+        <h2>Thực Đơn Ăn Vặt</h2>
+        <div class="menu-container">
+            <div id="banh-trang-tron" class="menu-item">
+                <img src="https://cdn-www.vinid.net/8e74c3a4-cach-lam-banh-trang-tron.jpg" alt="Bánh Tráng Trộn">
+                <h3>Bánh Tráng Trộn</h3>
+                <p>Giá: 20.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Bánh Tráng Trộn', 20000, 'https://cdn-www.vinid.net/8e74c3a4-cach-lam-banh-trang-tron.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+            <div id="kho-bo" class="menu-item">
+                <img src="https://cdn.tgdd.vn/Files/2021/09/18/1383838/cach-lam-kho-bo-mieng-ngon-don-gian-khong-can-lo-202109182247023268.jpg"
+                    alt="Khô Bò">
+                <h3>Khô Bò</h3>
+                <p>Giá: 35.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Khô Bò', 35000, 'https://cdn.tgdd.vn/Files/2021/09/18/1383838/cach-lam-kho-bo-mieng-ngon-don-gian-khong-can-lo-202109182247023268.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+            <div id="xoai-lac" class="menu-item">
+                <img src="https://cdn.tgdd.vn/2021/04/CookProduct/thum-1200x676-17.jpg" alt="Xoài Lắc">
+                <h3>Xoài Lắc</h3>
+                <p>Giá: 25.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Xoài Lắc', 25000, 'https://cdn.tgdd.vn/2021/04/CookProduct/thum-1200x676-17.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+            <div id="hat-dieu" class="menu-item">
+                <img src="https://cdn.tgdd.vn/Files/2021/08/07/1373695/huong-dan-lam-mon-hat-dieu-rang-muoi-cuc-ngon-don-gian-tai-nha-202112282033233409.jpg"
+                    alt="Hạt Điều Rang Muối">
+                <h3>Hạt Điều Rang Muối</h3>
+                <p>Giá: 50.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Hạt Điều Rang Muối', 50000, 'https://cdn.tgdd.vn/Files/2021/08/07/1373695/huong-dan-lam-mon-hat-dieu-rang-muoi-cuc-ngon-don-gian-tai-nha-202112282033233409.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+            <div id="cha-ca-vien" class="menu-item">
+                <img src="https://yeutre.vn/cdn/medias/uploads/165/165438-cach-lam-cha-ca-vien-chien.jpg"
+                    alt="Chả Cá Viên Chiên">
+                <h3>Chả Cá Viên Chiên</h3>
+                <p>Giá: 40.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Chả Cá Viên Chiên', 40000, 'https://yeutre.vn/cdn/medias/uploads/165/165438-cach-lam-cha-ca-vien-chien.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+            <div id="nem-chua-ran" class="menu-item">
+                <img src="https://amthucdochay.com/wp-content/uploads/2021/11/nem-chua-ran.jpg" alt="Nem Chua Rán">
+                <h3>Nem Chua Rán</h3>
+                <p>Giá: 30.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Nem Chua Rán', 30000, 'https://amthucdochay.com/wp-content/uploads/2021/11/nem-chua-ran.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+            <!-- Món 1 -->
+            <div class="menu-item">
+                <img src="https://i.ytimg.com/vi/VpU_NeYaXc0/maxresdefault.jpg" alt="Bánh Ghẹ">
+                <h3>Bánh Ghẹ</h3>
+                <p>Giá: 45.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Bánh Ghẹ', 45000, 'https://i.ytimg.com/vi/VpU_NeYaXc0/maxresdefault.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <!-- Món 2 -->
+            <div class="menu-item">
+                <img src="https://meatdeli.com.vn/upload/iblock/684/6845384c05ba7ad3e206b4ad0f7c6029.jpg"
+                    alt="Sườn Nướng Mật Ong">
+                <h3>Sườn Nướng Mật Ong</h3>
+                <p>Giá: 70.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Sườn Nướng Mật Ong', 70000, 'https://meatdeli.com.vn/upload/iblock/684/6845384c05ba7ad3e206b4ad0f7c6029.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <!-- Món 3 -->
+            <div class="menu-item">
+                <img src="https://cdn.tgdd.vn/2020/07/CookRecipe/Avatar/trung-cut-lac-pho-mai-thumbnail-1.jpg"
+                    alt="Trứng Cút Lắc">
+                <h3>Trứng Cút Lắc</h3>
+                <p>Giá: 28.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Trứng Cút Lắc', 28000, 'https://cdn.tgdd.vn/2020/07/CookRecipe/Avatar/trung-cut-lac-pho-mai-thumbnail-1.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <!-- Món 4 -->
+            <div class="menu-item">
+                <img src="https://cdn.tgdd.vn/Files/2021/08/02/1372440/2-cach-lam-kho-ca-du-1-nang-va-kho-ca-du-chay-toi-thom-ngon-don-gian-tai-nha-202108292331145441.jpg" alt="Khô Cá">
+                <h3>Khô Cá</h3>
+                <p>Giá: 55.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Khô Cá', 55000, 'https://cdn.tgdd.vn/Files/2021/08/02/1372440/2-cach-lam-kho-ca-du-1-nang-va-kho-ca-du-chay-toi-thom-ngon-don-gian-tai-nha-202108292331145441.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <!-- Món 5 -->
+            <div class="menu-item">
+                <img src="https://sagiang.com.vn/wp-content/uploads/2022/05/IMG_0037-scaled.jpg" alt="Bánh Phồng Tôm">
+                <h3>Bánh Phồng Tôm</h3>
+                <p>Giá: 25.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Bánh Phồng Tôm', 25000, 'https://sagiang.com.vn/wp-content/uploads/2022/05/IMG_0037-scaled.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <!-- Món 6 -->
+            <div class="menu-item">
+                <img src="https://i.ytimg.com/vi/XiW-cEqY7PE/maxresdefault.jpg" alt="Bắp Xào Bơ">
+                <h3>Bắp Xào Bơ</h3>
+                <p>Giá: 20.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Bắp Xào Bơ', 20000, 'https://i.ytimg.com/vi/XiW-cEqY7PE/maxresdefault.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <!-- Món 7 -->
+            <div class="menu-item">
+                <img src="https://cdn.hanoijourney.com/wp-content/uploads/2017/06/image1.png" alt="Bánh Giò">
+                <h3>Bánh Giò</h3>
+                <p>Giá: 15.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Bánh Giò', 15000, 'https://cdn.hanoijourney.com/wp-content/uploads/2017/06/image1.png')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <!-- Món 8 -->
+            <div class="menu-item">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.E-8cr2F12OLfJeUaL7QtBgHaEJ&pid=Api&P=0&h=180" alt="Bánh Cam">
+                <h3>Bánh Cam</h3>
+                <p>Giá: 10.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Bánh Cam', 10000, 'https://tse4.mm.bing.net/th?id=OIP.E-8cr2F12OLfJeUaL7QtBgHaEJ&pid=Api&P=0&h=180')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://cdn.tgdd.vn/Files/2017/10/03/1029885/cach-lam-pho-mai-que-beo-ngay-gion-ngon-202203151423463828.jpg"
+                    alt="Phô Mai Que">
+                <h3>Phô Mai Que</h3>
+                <p>Giá: 30.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Phô Mai Que', 30000, 'https://cdn.tgdd.vn/Files/2017/10/03/1029885/cach-lam-pho-mai-que-beo-ngay-gion-ngon-202203151423463828.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Giới thiệu</h2>
+                <p>Trở về tuổi thơ tự hào mang đến những ly trà sữa không chỉ thơm ngon mà còn đảm bảo chất lượng và sức
+                    khỏe cho người tiêu dùng. Với sự kết hợp hài hòa giữa lá trà xanh nguyên chất từ những vùng núi cao
+                    nổi tiếng như Đài Loan và Nhật Bản cùng sữa tươi hảo hạng, chúng tôi cam kết mang lại trải nghiệm vị
+                    giác tinh tế, đậm đà và đầy hoài niệm. Hãy đến Trở về tuổi thơ, nơi mà mỗi ngụm trà không chỉ là
+                    thức uống, mà còn là chuyến hành trình về những kỷ niệm đẹp của tuổi thơ.</p>
+            </div>
+            <div class="footer-section contact">
+                <h2>Liên hệ</h2>
+                <ul>
+                    <li>Trở về tuổi thơ</li>
+                    <li>Số ĐKKD: 41E8052150, cấp 28/09/2024</li>
+                    <li>MST: 0302166322-002</li>
+                    <li>Hotline: 0338828125</li>
+                    <li>Địa chỉ: 499b Đường Kênh Tân Hóa, Phường Hòa Thạnh, Quận Tân Phú,</li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h2>Kết nối với chúng tôi</h2>
+                <div class="social-icons">
+                    <a href="#"><img
+                            src="https://static.vecteezy.com/system/resources/previews/016/716/450/original/tiktok-icon-free-png.png"
+                            alt="TikTok"></a>
+                    <a href="#"><img
+                            src="https://static.vecteezy.com/system/resources/previews/016/716/481/non_2x/facebook-icon-free-png.png"
+                            alt="Facebook"></a>
+                    <a href="#"><img
+                            src="https://1.bp.blogspot.com/-hY5-pNrOcKw/XeI_00cpCgI/AAAAAAAAF4A/J7jS49V8kNozycy0PgY6wfc7SUU9gulTgCLcBGAsYHQ/s1600/Youtube-Icon-square-2340x2340.png"
+                            alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Trở về tuổi thơ. Bản quyền thuộc về chúng tôi.</p>
+        </div>
+    </footer>
+
+
+    <script src="ungdung.js"></script>
+    <script>
+        
+        function toggleLoginRegisterForm() {
+            const formSection = document.getElementById('login-register-form');
+            if (formSection.style.display === 'none' || formSection.style.display === '') {
+                formSection.style.display = 'block';  
+            } else {
+                formSection.style.display = 'none';  
+            }
+        }
+ 
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
+        }
+ 
+        document.getElementById('home').style.display = 'block';
+    </script>
+
+
+    <script>
+        function updateCartDisplay() {
+            const cartItemsDiv = document.getElementById('cart-items');
+            const cartTotal = document.getElementById('cart-total');
+            cartItemsDiv.innerHTML = '';
+            let totalItems = 0;
+            let totalPrice = 0;
+            for (const [itemName, itemData] of Object.entries(cart)) {
+                totalItems += itemData.quantity;
+                totalPrice += itemData.price * itemData.quantity;
+
+                const itemDiv = document.createElement('div');
+                itemDiv.classList.add('cart-item');
+                itemDiv.innerHTML = `
+                <div class="cart-item-image">
+                    <img src="${itemData.image}" alt="${itemName}">
+                </div>
+                <div class="cart-item-details">
+                    <p>${itemName}</p>
+                    <p>Giá: ${itemData.price}đ</p>
+                    <p>Số lượng: ${itemData.quantity}</p>
+                </div>
+            `;
+
+                cartItemsDiv.appendChild(itemDiv);
+            }
+
+            cartTotal.innerText = `Tổng số sản phẩm: ${totalItems} - Tổng giá: ${totalPrice}đ`;
+
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+
+        function chuyenDenTrangGioHang() {
+       
+            localStorage.setItem('cart', JSON.stringify(cart));
+            window.location.href = 'cart.html';
+        }
+
+ 
+        window.onload = function () {
+         
+            const username = localStorage.getItem('loggedInUsername');
+            const welcomeMessage = document.getElementById('welcome-message');
+ 
+            if (username) {
+                welcomeMessage.innerText = `Xin chào, ${username}!`;
+            } else {
+                welcomeMessage.innerText = 'Xin chào, bạn!';
+            }
+        };
+
+
+    </script>
+
+</body>
+
+</html>
