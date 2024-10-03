@@ -1,0 +1,224 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+h2, h3 {
+    color: #003366;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #003366;
+}
+
+/* Header */
+header {
+    background-color: #1a1a2e;
+    padding: 20px;
+    color: white;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-info {
+    display: flex;
+    align-items: center;
+}
+
+.brand-info .logo {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.user-options a {
+    margin-left: 20px;
+    color: white;
+}
+
+.user-options a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #162447;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #1f4068;
+    border-radius: 5px;
+}
+
+/* Job Description Section */
+.job-description {
+    padding: 40px 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.apply-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #007bff; /* Adjust color as needed */
+    text-align: center; /* Center align the title */
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Social Icons */
+.footer-section .social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Center align icons */
+}
+
+.footer-section .social-icons a img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%; /* Makes icons circular */
+    transition: transform 0.3s ease; /* Animation for hover effect */
+}
+
+.footer-section .social-icons a img:hover {
+    transform: scale(1.1); /* Slightly enlarges icon on hover */
+}
+
+/* Footer bottom styles */
+.footer-bottom {
+    background-color: #0f3460;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid white;
+    font-size: 14px;
+}
+/* Back to Home */
+.back-to-home {
+    text-align: center; /* Centers the content */
+    margin: 20px 0; /* Adds some space above and below */
+}
+
+.back-to-home a {
+    color: #007bff; /* Sets the link color to blue */
+    font-size: 18px; /* Optional: Adjust font size */
+    font-weight: bold; /* Optional: Makes the text bold */
+}
+
+.back-to-home a:hover {
+    color: #0056b3; /* Optional: Changes color on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .job-info {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}

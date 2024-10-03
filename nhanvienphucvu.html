@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+
+    <title>Trở về tuổi thơ</title>
+    <link rel="stylesheet" href="phachethungan.css">
+    <link rel="stylesheet" href="phongcach.css">
+    <script src="dangki.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="brand-info">
+                <img src="logotrasua.jpg" alt="Trở về tuổi thơ Logo" class="logo">
+                <div class="animated-text">
+                    Hệ thống Trà Sữa Trở về tuổi thơ
+                </div>
+
+            </div>
+
+            <div class="contact-info">
+                <p><i class="far fa-clock"></i> 8:00-22:30 | Hotline: 0338828125</p>
+            </div>
+            <div class="user-options">
+                <p id="welcome-message">Xin chào, khách!</p>
+                <a href="dangki.html" onclick="toggleLoginRegisterForm()">Đăng nhập / Đăng ký</a>
+                <a href="cart.html" onclick="chuyenDenTrangGioHang()">Giỏ hàng / Sản phẩm</a>
+                <div id="cart-items" style="display: none;"></div>
+                <p id="cart-total" style="display: none;"></p>
+
+
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home" onclick="showSection('home')">Trang chủ</a></li>
+                <li class="dropdown">
+                    <a href="#">Menu</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#" onclick="showSection('tra-sua')">Trà sữa</a></li>
+                        <li><a href="#" onclick="showSection('nuoc-ep')">Nước ép</a></li>
+                        <li><a href="#" onclick="showSection('an-vat')">Ăn vặt</a></li>
+                    </ul>
+                </li>
+                <li><a href="cuahang.html">Cửa hàng</a></li>
+                <li><a href="sukienkhuyenmai.html">Sự kiện khuyến mãi </a></li>
+                <li><a href="tuyendung.html">Tuyển dụng</a></li>
+                <li><a href="vechungtoi.html" onclick="showSection('about-us')">Về chúng tôi</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="job-description">
+        <h2>Nhân viên phục vụ</h2>
+        <h3>Mô tả công việc:</h3>
+        <ul>
+            <li>Tiếp đón và hướng dẫn khách hàng vào chỗ ngồi.</li>
+            <li>Ghi nhận và xử lý order từ khách hàng.</li>
+            <li>Phục vụ món ăn, đồ uống đến khách.</li>
+            <li>Giữ gìn vệ sinh khu vực làm việc, bàn ghế sạch sẽ.</li>
+            <li>Hỗ trợ các bộ phận khác khi cần.</li>
+        </ul>
+
+        <h3>Yêu cầu:</h3>
+        <ul>
+            <li>Nam/Nữ, tuổi từ 18 đến 30.</li>
+            <li>Ngoại hình khá, vui vẻ, giao tiếp tốt.</li>
+            <li>Nhanh nhẹn, yêu thích công việc dịch vụ.</li>
+            <li>Không yêu cầu kinh nghiệm, sẽ được đào tạo.</li>
+            <li>Làm việc theo ca: Ca sáng (08:00 – 16:00) và ca chiều (15:30 – 22:30).</li>
+        </ul>
+
+        <h3>Quyền lợi:</h3>
+        <ul>
+            <li>Lương: 18k/giờ – 24k/giờ tùy năng lực.</li>
+            <li>Thưởng doanh thu.</li>
+            <li>Lương tháng 13.</li>
+            <li>Ưu đãi giảm giá 50% dành riêng cho Nhân viên.</li>
+            <li>Môi trường làm việc trẻ trung, năng động.</li>
+        </ul>
+
+        <a href="xctvut_nhanvienphucvu.html" class="apply-button">Nộp hồ sơ</a>
+    </section>
+
+    <div class="back-to-home">
+        <a href="index.html">Trở về trang chủ</a>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Giới thiệu</h2>
+                <p>Trở về tuổi thơ tự hào mang đến những ly trà sữa không chỉ thơm ngon mà còn đảm bảo chất lượng và sức
+                    khỏe cho người tiêu dùng. Với sự kết hợp hài hòa giữa lá trà xanh nguyên chất từ những vùng núi cao
+                    nổi tiếng như Đài Loan và Nhật Bản cùng sữa tươi hảo hạng, chúng tôi cam kết mang lại trải nghiệm vị
+                    giác tinh tế, đậm đà và đầy hoài niệm. Hãy đến Trở về tuổi thơ, nơi mà mỗi ngụm trà không chỉ là
+                    thức uống, mà còn là chuyến hành trình về những kỷ niệm đẹp của tuổi thơ.</p>
+            </div>
+            <div class="footer-section contact">
+                <h2>Liên hệ</h2>
+                <ul>
+                    <li>Trở về tuổi thơ</li>
+                    <li>Số ĐKKD: 41E8052150, cấp 28/09/2024</li>
+                    <li>MST: 0302166322-002</li>
+                    <li>Hotline: 0338828125</li>
+                    <li>Địa chỉ: 499b Đường Kênh Tân Hóa, Phường Hòa Thạnh, Quận Tân Phú,</li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h2>Kết nối với chúng tôi</h2>
+                <div class="social-icons">
+                    <a href="#"><img
+                            src="https://static.vecteezy.com/system/resources/previews/016/716/450/original/tiktok-icon-free-png.png"
+                            alt="TikTok"></a>
+                    <a href="#"><img
+                            src="https://static.vecteezy.com/system/resources/previews/016/716/481/non_2x/facebook-icon-free-png.png"
+                            alt="Facebook"></a>
+                    <a href="#"><img
+                            src="https://1.bp.blogspot.com/-hY5-pNrOcKw/XeI_00cpCgI/AAAAAAAAF4A/J7jS49V8kNozycy0PgY6wfc7SUU9gulTgCLcBGAsYHQ/s1600/Youtube-Icon-square-2340x2340.png"
+                            alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Trở về tuổi thơ. Bản quyền thuộc về chúng tôi.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

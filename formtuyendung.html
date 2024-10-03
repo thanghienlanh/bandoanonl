@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuyển dụng</title>
+    <link rel="stylesheet" href="formtuyendung.css">
+</head>
+<body>
+  
+    <header>
+        <h1 class="header-title">Tuyển dụng</h1>
+         
+        <div class="back-link">
+            <a href="javascript:history.back()">&#60; Quay lại</a>
+        </div>
+    </header>
+ 
+    <section class="form-section">
+        <form action="#" method="post">
+        
+            <div class="form-group">
+                <label for="name">Họ và tên</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Địa chỉ email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Số điện thoại</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Mô tả</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="intro-letter">Thư giới thiệu</label>
+                <textarea id="intro-letter" name="intro-letter" rows="4" required></textarea>
+            </div>
+ 
+            <div class="form-group">
+                <label for="cv">Chọn file CV</label>
+                <input type="file" id="cv" name="cv" accept=".pdf" required>
+            </div>
+ 
+            <div class="form-group">
+                <label>Giới tính</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="Nam" required>
+                    <label for="male">Nam</label>
+                    <input type="radio" id="female" name="gender" value="Nữ" required>
+                    <label for="female">Nữ</label>
+                </div>
+            </div> 
+            <div class="form-group">
+                <label>Cam kết</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="confirm" name="confirm" required>
+                    <label for="confirm">Tôi xin xác nhận bản khai trên của tôi là hoàn toàn chính xác và đúng sự thật.</label>
+                </div>
+            </div>
+            <button type="submit" class="submit-button">Gửi thông tin</button>
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002244;
+    padding: 10px 20px;
+    color: white;
+}
+
+.top-bar .brand-info {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar .brand-info img.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.top-bar .user-options a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.top-bar .contact-info {
+    font-size: 0.9em;
+}
+
+.navbar {
+    background-color: #001f33;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    background-color: #00ccff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.job-description {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.job-description h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.job-description h3 {
+    color: #4CAF50;
+    margin-top: 20px;
+}
+
+.job-description ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.job-description ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.apply-button {
+    display: inline-block;
+    background-color: #76b852;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.apply-button:hover {
+    background-color: #4CAF50;
+}
+
+.back-to-home {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.back-to-home a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-to-home a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #001f33;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+}
+
+.footer-section h2 {
+    color: #00ccff;
+    font-size: 18px;
+}
+
+.footer-section p,
+.footer-section ul {
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section .social-icons img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    background-color: #002244;
+    text-align: center;
+    padding-top: 10px;
+    color: #ccc;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .job-description {
+        width: 90%;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+}
+/* Style the promotion section */
+#promotions {
+    text-align: center;
+    padding: 20px;
+}
+
+.promotion {
+    display: inline-block;
+    width: 300px; /* Set a fixed width for each promotion card */
+    margin: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.promotion:hover {
+    transform: scale(1.05);
+}
+
+/* Style for images */
+.promotion img {
+    width: 100%; /* Set image width to match the promotion card */
+    height: 200px; /* Set a fixed height for images */
+    object-fit: cover; /* Crop images to fill the container */
+    border-radius: 5px;
+    border: 2px solid #00ccff; /* Add border around the images */
+}
+
+/* Heading effects */
+.promotion h3 {
+    color: #333;
+    transition: color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.promotion h3:hover {
+    color: #00ccff;
+    transform: scale(1.1);
+}
+
+/* Back-to-home button */
+.back-to-home a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #00ccff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.back-to-home a:hover {
+    background-color: #004466;
+    text-decoration: none;
+    color: white;
+}

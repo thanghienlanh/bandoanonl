@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="phongcach.css">
+</head>
+<body>
+    <header>
+        <h1>Giỏ Hàng của Bạn</h1>
+    </header>
+    
+    <section id="cart-items-section">
+        <div id="cart-items"></div>
+              <button id="checkout-button" onclick="thanhToan()">Thanh Toán</button>
+        <p id="success-message" style="display: none; color: green; font-weight: bold;"></p>
+    </section>
+
+    <button onclick="quayLaiTrangTruoc()">Quay lại trang trước</button>
+
+    <script>
+        let totalPrice = 0; // Declare totalPrice globally to access it in thanhToan()
+
+        function loadCartData() {
+            const cartData = localStorage.getItem('cart');
+            const cart = cartData ? JSON.parse(cartData) : {};
+
+            const cartItemsDiv = document.getElementById('cart-items');
+            const cartTotal = document.getElementById('cart-total');
+
+            cartItemsDiv.innerHTML = '';  
+            totalPrice = 0; // Reset total price each time the cart is loaded
+
+            for (const [itemName, itemData] of Object.entries(cart)) {
+                totalPrice += itemData.price * itemData.quantity;
+
+                const itemDiv = document.createElement('div');
+                itemDiv.classList.add('cart-item');
+                itemDiv.innerHTML = `
+                    <div class="cart-item-image">
+                        <img src="${itemData.image}" alt="${itemName}">
+                    </div>
+                    <div class="cart-item-details">
+                        <p>${itemName}</p>
+                        <p>Giá: ${itemData.price}đ</p>
+                        <p>Số lượng: ${itemData.quantity}</p>
+                    </div>
+                `;
+
+                cartItemsDiv.appendChild(itemDiv);
+            }
+
+            cartTotal.innerText = `Tổng giá: ${totalPrice}đ`;
+        }
+
+        function thanhToan() {
+            // Clear the cart data from localStorage
+            localStorage.removeItem('cart');
+
+            // Display success message with the total price
+            const successMessage = document.getElementById('success-message');
+            successMessage.innerText = `Thanh toán thành công! Tổng tiền: ${totalPrice}đ`;
+            successMessage.style.display = 'block';
+
+            // Clear cart items display
+            const cartItemsDiv = document.getElementById('cart-items');
+            cartItemsDiv.innerHTML = '';
+            const cartTotal = document.getElementById('cart-total');
+            cartTotal.innerText = 'Tổng giá: 0đ';
+        }
+
+        function quayLaiTrangTruoc() {
+            window.history.back();
+        }
+
+        document.addEventListener('DOMContentLoaded', loadCartData);
+    </script>
+    
+</body>
+</html>
