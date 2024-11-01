@@ -4,40 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+
     <title>Trở về tuổi thơ</title>
-    <link rel="stylesheet" href="shipper.css">
-</head>
+    <link rel="stylesheet" href="tuyendungtatca.css">
+ </head>
 
 <body>
-
     <header>
-        <div class="top-bar">
-            <div class="brand-info">
+        <div class="thanh-tren">
+            <div class="thong-tin-thuong-hieu">
                 <img src="logotrasua.jpg" alt="Trở về tuổi thơ Logo" class="logo">
-                <p>Hệ thống Trà Sữa Trở về tuổi thơ</p>
+                <div class="chu-chay">
+                    Hệ thống Trà Sữa Trở về tuổi thơ
+                </div>
             </div>
-            <div class="contact-info">
-                <p>8:00-22:30 | Hotline: 0338828125</p>
+
+            <div class="thong-tin-lien-he">
+                <p><i class="far fa-clock"></i> 8:00-22:30 | Hotline: 0338828125</p>
             </div>
-            <div class="user-options">
-                <a href="#">Đăng nhập / Đăng ký</a>
-                <a href="#" class="cart">Giỏ hàng / 0 sản phẩm</a>
+            <div class="lua-chon-nguoi-dung">
+                <p id="loi-chao">Xin chào, khách!</p>
+                <a href="dangki.html" onclick="toggleLoginRegisterForm()">Đăng nhập / Đăng ký</a>
+                <a href="cart.html" onclick="chuyenDenTrangGioHang()">Giỏ hàng / Sản phẩm</a>
+                <div id="gio-hang" style="display: none;"></div>
+                <p id="tong-gia" style="display: none;"></p>
             </div>
         </div>
 
-        <nav class="navbar">
+        <nav class="thanh-dieu-huong">
             <ul>
-                <li><a href="#home">Trang chủ</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#store">Cửa hàng</a></li>
-                <li><a href="#story">Sự kiện khuyến mãi</a></li>
-                <li><a href="#recruitment">Tuyển dụng</a></li>
-                <li><a href="#about-us">Về chúng tôi</a></li>
+                <li><a href="#home" onclick="showSection('home')">Trang chủ</a></li>
+                <li class="menu-con">
+                    <a href="#">Menu</a>
+                    <ul class="noi-dung-menu-con">
+                        <li><a href="menutrasua.html" onclick="showSection('tra-sua')">Trà sữa</a></li>
+                        <li><a href="menunuocep.html" onclick="showSection('nuoc-ep')">Nước ép</a></li>
+                        <li><a href="menuanvat.html" onclick="showSection('an-vat')">Ăn vặt</a></li>
+                    </ul>
+                </li>
+                <li><a href="cuahang.html">Cửa hàng</a></li>
+                <li><a href="sukienkhuyenmai.html">Sự kiện khuyến mãi</a></li>
+                <li><a href="tuyendung.html">Tuyển dụng</a></li>
+                <li><a href="vechungtoi.html" onclick="showSection('about-us')">Về chúng tôi</a></li>
             </ul>
         </nav>
     </header>
-
-    <section class="job-description">
+    <section class="mo-ta-cong-viec">
         <h2>Tuyển dụng Shipper Giao Hàng</h2>
         
         <h3>Mô tả công việc</h3>
@@ -49,7 +62,6 @@
             <li>Báo cáo tình trạng giao hàng, vấn đề phát sinh với Quản lý.</li>
             <li>Thực hiện một số công việc khác theo sự phân công của Quản lý.</li>
         </ul>
-        
         <h3>Yêu cầu</h3>
         <ul>
             <li>Nam/Nữ.</li>
@@ -61,7 +73,6 @@
             <li>Có thể làm việc full tuần là một lợi thế.</li>
             <li>Thử việc 01 tuần.</li>
         </ul>
-        
         <h3>Quyền lợi</h3>
         <ul>
             <li>Mức lương: từ 18k/giờ – 24k/giờ tùy theo năng lực.</li>
@@ -72,7 +83,6 @@
             <li>Ưu đãi giảm giá 50% dành riêng cho Nhân viên.</li>
             <li>Làm việc trong môi trường trẻ, năng động, chuyên nghiệp.</li>
         </ul>
-        
         <h3>Lưu ý</h3>
         <ul>
             <li>Chúng tôi sẽ liên hệ mời phỏng vấn hồ sơ phù hợp yêu cầu tuyển dụng qua email/điện thoại với ứng viên đạt yêu cầu.</li>
@@ -80,22 +90,22 @@
             <li>Toàn bộ thông tin ứng viên cam kết bảo mật và chỉ sử dụng phục vụ mục đích tuyển dụng.</li>
             <li>Không tuyển sinh viên.</li>
         </ul>
-        
-        <a href="xctvut_nhanviengiaohang.html" class="apply-button">Nộp hồ sơ</a>
+        <a href="xctvut_nhanviengiaohang.html" class="nut-nop-ho-so">Nộp hồ sơ</a>
     </section>
-
-    <div class="back-to-home">
+    <div class="tro-ve-trang-chu">
         <a href="index.html">Trở về trang chủ</a>
     </div>
-
     <footer>
-        <div class="footer-content">
-            <div class="footer-section about">
+        <div class="noi-dung-chan-trang">
+            <div class="khu-vuc-chan-trang gioi-thieu">
                 <h2>Giới thiệu</h2>
-                <p>Trở về tuổi thơ tự hào mang đến những ly trà sữa thơm ngon, đảm bảo chất lượng và sức khỏe cho người tiêu dùng...</p>
+                <p>Trở về tuổi thơ tự hào mang đến những ly trà sữa không chỉ thơm ngon mà còn đảm bảo chất lượng và sức
+                    khỏe cho người tiêu dùng. Với sự kết hợp hài hòa giữa lá trà xanh nguyên chất từ những vùng núi cao
+                    nổi tiếng như Đài Loan và Nhật Bản cùng sữa tươi hảo hạng, chúng tôi cam kết mang lại trải nghiệm vị
+                    giác tinh tế, đậm đà và đầy hoài niệm. Hãy đến Trở về tuổi thơ, nơi mà mỗi ngụm trà không chỉ là
+                    thức uống, mà còn là chuyến hành trình về những kỷ niệm đẹp của tuổi thơ.</p>
             </div>
-
-            <div class="footer-section contact">
+            <div class="khu-vuc-chan-trang lien-he">
                 <h2>Liên hệ</h2>
                 <ul>
                     <li>Trở về tuổi thơ</li>
@@ -105,22 +115,19 @@
                     <li>Địa chỉ: 499b Đường Kênh Tân Hóa, Phường Hòa Thạnh, Quận Tân Phú</li>
                 </ul>
             </div>
-
-            <div class="footer-section social">
+            <div class="khu-vuc-chan-trang ket-noi">
                 <h2>Kết nối với chúng tôi</h2>
-                <div class="social-icons">
-                    <a href="https://www.tiktok.com" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/016/716/450/original/tiktok-icon-free-png.png" alt="TikTok"></a>
-                    <a href="https://www.facebook.com" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/016/716/481/non_2x/facebook-icon-free-png.png" alt="Facebook"></a>
-                    <a href="https://www.youtube.com" target="_blank"><img src="https://1.bp.blogspot.com/-hY5-pNrOcKw/XeI_00cpCgI/AAAAAAAAF4A/J7jS49V8kNozycy0PgY6wfc7SUU9gulTgCLcBGAsYHQ/s1600/Youtube-Icon-square-2340x2340.png" alt="YouTube"></a>
+                <div class="bieu-tuong-mang-xa-hoi">
+                    <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/016/716/450/original/tiktok-icon-free-png.png" alt="TikTok"></a>
+                    <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/016/716/481/non_2x/facebook-icon-free-png.png" alt="Facebook"></a>
+                    <a href="#"><img src="https://1.bp.blogspot.com/-hY5-pNrOcKw/XeI_00cpCgI/AAAAAAAAF4A/J7jS49V8kNozycy0PgY6wfc7SUU9gulTgCLcBGAsYHQ/s1600/Youtube-Icon-square-2340x2340.png" alt="YouTube"></a>
                 </div>
             </div>
         </div>
-
-        <div class="footer-bottom">
+        <div class="chan-trang-duoi">
             <p>&copy; 2024 Trở về tuổi thơ. Bản quyền thuộc về chúng tôi.</p>
         </div>
     </footer>
-
 </body>
 
 </html>

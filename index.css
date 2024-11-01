@@ -3,7 +3,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
-}
+    background-attachment: fixed;
+    color: white; 
+    height: 100vh;
+ }
 
 #trang-chu {
     background-size: cover;
@@ -61,6 +64,7 @@ header {
      font-size: 20px;
     margin-bottom: 0;
  }
+
 .phan {
     padding: 10px 10px;
     text-align: center;
@@ -81,13 +85,13 @@ header {
     position: relative;
 }
 
-.thanh-dieu-huong ul li a {
+ .thanh-dieu-huong ul li a {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
     display: inline-block;
     font-size: 1.2em;
-    transition: background-color 1s ease, padding 1s ease; 
+    transition: background-color 1s ease, padding 1s ease;  
 }
 
 .thanh-dieu-huong ul li a:hover {
@@ -100,10 +104,18 @@ header {
 .thanh-dieu-huong ul li .noi-dung-menu-con {
     display: none;
     position: absolute;
+    top: 100%;  
+    left: 0;
     background-color: #001f33;
     min-width: 160px;
+    padding: 10px 0;
+    border-radius: 5px;
+    z-index: 10;
 }
-
+.thanh-dieu-huong ul li:hover .noi-dung-menu-con,
+.noi-dung-menu-con:hover {
+    display: block; 
+}
 .thanh-dieu-huong ul li .noi-dung-menu-con a {
     color: white;
     padding: 12px 16px;
@@ -111,7 +123,11 @@ header {
     display: block;
     margin-bottom: 5px;
 }
-
+.noi-dung-menu-con a:hover {
+    background-color: #00ccff;
+    color: #000;
+    border-radius: 5px;
+}
 .thanh-dieu-huong ul li .noi-dung-menu-con a:last-child {
     margin-bottom: 0;
 }
@@ -120,130 +136,42 @@ header {
     display: block;
     font-size: 10px;
 }
- 
-.phan-tuyen-dung {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 40px 20px;
-}
-
-.thong-tin-cong-viec {
-    background-color: white;
-    border: 1px solid #d0d0d0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.thong-tin-cong-viec:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.thong-tin-cong-viec h2 {
-    color: #007acc;
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.thong-tin-cong-viec ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: left;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.thong-tin-cong-viec ul li {
-    margin-bottom: 8px;
-    line-height: 1.6;
-}
-
-.thong-tin-cong-viec a {
-    display: inline-block;
-    background-color: #002244;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.thong-tin-cong-viec a:hover {
-    background-color: #004080;
-}
- 
-.tro-ve-trang-chu {
-    text-align: center;
-    margin-top: 30px;
-}
-
-
-.tro-ve-trang-chu a:hover {
-    background-color: #dceed7;
-}
-
 
 footer {
     background-color: #001f33;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
+    transform: translateZ(0);
+    position: relative; 
+    bottom: 0;
+    width: 100%;
 }
 
 .noi-dung-chan-trang {
     display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
 }
 
-.gioi-thieu, .lien-he, .ket-noi {
+.phan-chan-trang {
     flex: 1;
-    min-width: 250px;
     padding: 20px;
 }
 
-.gioi-thieu h2, .lien-he h2, .ket-noi h2 {
+.phan-chan-trang h2 {
     color: #00ccff;
-    font-size: 18px;
-    margin-bottom: 15px;
-    text-align: center;
 }
 
-.gioi-thieu p {
+.phan-chan-trang p,
+.phan-chan-trang ul {
     color: #ccc;
-    font-size: 14px;
-    line-height: 1.6;
 }
 
-.lien-he ul {
+.phan-chan-trang ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
-    color: #ccc;
-    font-size: 14px;
+    padding-left: 0;
 }
 
-.lien-he ul li {
+.phan-chan-trang ul li {
     margin-bottom: 10px;
-}
-
-.bieu-tuong-mang-xa-hoi a img {
-    width: 30px;
-    height: auto;
-    margin-right: 10px;
-    transition: transform 0.3s ease;
-}
-
-.bieu-tuong-mang-xa-hoi a img:hover {
-    transform: scale(1.1);
 }
 
 .chan-trang-duoi {
@@ -252,18 +180,11 @@ footer {
     color: #ccc;
     border-top: 1px solid #00ccff;
     margin-top: 20px;
-    font-size: 12px;
-}
-.nut-nop-ho-so {
-    color: #f0130b;
-    text-decoration: none;  
-    font-weight: bold;  
 }
 
-.tro-ve-trang-chu a {
-    color: #f0130b;
-    text-decoration: none; 
-    font-weight: bold;  
+.chan-trang-duoi p {
+    margin: 0;
+    font-size: 14px;
 }
 
 button,
@@ -315,6 +236,97 @@ button:hover,
     transform: scale(1.1);
     background-color: #e0e0e6;
 }
- 
+ #bieu_tuong_chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ff5722;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
 
+#bieu_tuong_chat:hover {
+    transform: scale(1.1);
+}
+ 
+.hop_thoai_chatbot {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: #333;  
+    color: #fff; 
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
 
+.tieu_de_chatbot {
+    background-color: #ff5722; 
+    color: white; 
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tin_nhan_chatbot {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.tin_nhan_chatbot p {
+    margin: 5px 0;
+    color: #e0e0e0; 
+}
+
+.khu_vuc_nhap {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #444;  
+}
+
+#nhap_cau_hoi {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    color: #fff;  
+    background-color: #555; 
+}
+
+#nhap_cau_hoi::placeholder {
+    color: #ccc;  
+}
+
+#nhap_cau_hoi:focus {
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e64a19;
+}

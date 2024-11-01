@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trở về tuổi thơ - Đăng Ký</title>
+    <link rel="stylesheet" href="menutong.css">
+ </head>
+<body>
+    <body>
+        <header>
+            <div class="top-bar">
+                <div class="brand-info">
+                    <img src="logotrasua.jpg" alt="Trở về tuổi thơ Logo" class="logo">
+                    <div class="animated-text">
+                        Hệ thống Trà Sữa Trở về tuổi thơ
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <p><i class="far fa-clock"></i> 8:00-22:30 | Hotline: 0338828125</p>
+                </div>
+                <div class="user-options">
+                    <p id="welcome-message">Xin chào, khách!</p>
+                    <a href="dangki.html">Đăng nhập / Đăng ký</a>
+                    <a href="cart.html">Giỏ hàng / Sản phẩm</a>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li class="dropdown">
+                        <a href="#">Menu</a>
+                        <ul class="dropdown-content">
+                            <li><a href="menutrasua.html">Trà sữa</a></li>
+                            <li><a href="menunuocep.html">Nước ép</a></li>
+                            <li><a href="menuanvat.html">Ăn vặt</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cuahang.html">Cửa hàng</a></li>
+                    <li><a href="sukienkhuyenmai.html">Sự kiện khuyến mãi </a></li>
+                    <li><a href="tuyendung.html">Tuyển dụng</a></li>
+                    <li><a href="vechungtoi.html">Về chúng tôi</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="tra-sua" class="section menu-section" style="display: none;">
+            <h2>Thực Đơn Ăn Vặt</h2>
+        <div class="menu-container">
+            <div id="banh-trang-tron" class="menu-item">
+                <img src="https://cdn-www.vinid.net/8e74c3a4-cach-lam-banh-trang-tron.jpg" alt="Bánh Tráng Trộn">
+                <h3>Bánh Tráng Trộn</h3>
+                <p>Giá: 20.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Bánh Tráng Trộn', 20000, 'https://cdn-www.vinid.net/8e74c3a4-cach-lam-banh-trang-tron.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+            <div id="kho-bo" class="menu-item">
+                <img src="https://cdn.tgdd.vn/Files/2021/09/18/1383838/cach-lam-kho-bo-mieng-ngon-don-gian-khong-can-lo-202109182247023268.jpg"
+                    alt="Khô Bò">
+                <h3>Khô Bò</h3>
+                <p>Giá: 35.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Khô Bò', 35000, 'https://cdn.tgdd.vn/Files/2021/09/18/1383838/cach-lam-kho-bo-mieng-ngon-don-gian-khong-can-lo-202109182247023268.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+            <div id="xoai-lac" class="menu-item">
+                <img src="https://cdn.tgdd.vn/2021/04/CookProduct/thum-1200x676-17.jpg" alt="Xoài Lắc">
+                <h3>Xoài Lắc</h3>
+                <p>Giá: 25.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Xoài Lắc', 25000, 'https://cdn.tgdd.vn/2021/04/CookProduct/thum-1200x676-17.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+            <div id="hat-dieu" class="menu-item">
+                <img src="https://cdn.tgdd.vn/Files/2021/08/07/1373695/huong-dan-lam-mon-hat-dieu-rang-muoi-cuc-ngon-don-gian-tai-nha-202112282033233409.jpg"
+                    alt="Hạt Điều Rang Muối">
+                <h3>Hạt Điều Rang Muối</h3>
+                <p>Giá: 50.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Hạt Điều Rang Muối', 50000, 'https://cdn.tgdd.vn/Files/2021/08/07/1373695/huong-dan-lam-mon-hat-dieu-rang-muoi-cuc-ngon-don-gian-tai-nha-202112282033233409.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+            <div id="cha-ca-vien" class="menu-item">
+                <img src="https://yeutre.vn/cdn/medias/uploads/165/165438-cach-lam-cha-ca-vien-chien.jpg"
+                    alt="Chả Cá Viên Chiên">
+                <h3>Chả Cá Viên Chiên</h3>
+                <p>Giá: 40.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Chả Cá Viên Chiên', 40000, 'https://yeutre.vn/cdn/medias/uploads/165/165438-cach-lam-cha-ca-vien-chien.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+            <div id="nem-chua-ran" class="menu-item">
+                <img src="https://amthucdochay.com/wp-content/uploads/2021/11/nem-chua-ran.jpg" alt="Nem Chua Rán">
+                <h3>Nem Chua Rán</h3>
+                <p>Giá: 30.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Nem Chua Rán', 30000, 'https://amthucdochay.com/wp-content/uploads/2021/11/nem-chua-ran.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.ytimg.com/vi/VpU_NeYaXc0/maxresdefault.jpg" alt="Bánh Ghẹ">
+                <h3>Bánh Ghẹ</h3>
+                <p>Giá: 45.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Bánh Ghẹ', 45000, 'https://i.ytimg.com/vi/VpU_NeYaXc0/maxresdefault.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://meatdeli.com.vn/upload/iblock/684/6845384c05ba7ad3e206b4ad0f7c6029.jpg"
+                    alt="Sườn Nướng Mật Ong">
+                <h3>Sườn Nướng Mật Ong</h3>
+                <p>Giá: 70.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Sườn Nướng Mật Ong', 70000, 'https://meatdeli.com.vn/upload/iblock/684/6845384c05ba7ad3e206b4ad0f7c6029.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+
+            <div class="menu-item">
+                <img src="https://cdn.tgdd.vn/2020/07/CookRecipe/Avatar/trung-cut-lac-pho-mai-thumbnail-1.jpg"
+                    alt="Trứng Cút Lắc">
+                <h3>Trứng Cút Lắc</h3>
+                <p>Giá: 28.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Trứng Cút Lắc', 28000, 'https://cdn.tgdd.vn/2020/07/CookRecipe/Avatar/trung-cut-lac-pho-mai-thumbnail-1.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+
+            <div class="menu-item">
+                <img src="https://cdn.tgdd.vn/Files/2021/08/02/1372440/2-cach-lam-kho-ca-du-1-nang-va-kho-ca-du-chay-toi-thom-ngon-don-gian-tai-nha-202108292331145441.jpg"
+                    alt="Khô Cá">
+                <h3>Khô Cá</h3>
+                <p>Giá: 55.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Khô Cá', 55000, 'https://cdn.tgdd.vn/Files/2021/08/02/1372440/2-cach-lam-kho-ca-du-1-nang-va-kho-ca-du-chay-toi-thom-ngon-don-gian-tai-nha-202108292331145441.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://sagiang.com.vn/wp-content/uploads/2022/05/IMG_0037-scaled.jpg"
+                    alt="Bánh Phồng Tôm">
+                <h3>Bánh Phồng Tôm</h3>
+                <p>Giá: 25.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Bánh Phồng Tôm', 25000, 'https://sagiang.com.vn/wp-content/uploads/2022/05/IMG_0037-scaled.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+
+            <div class="menu-item">
+                <img src="https://i.ytimg.com/vi/XiW-cEqY7PE/maxresdefault.jpg" alt="Bắp Xào Bơ">
+                <h3>Bắp Xào Bơ</h3>
+                <p>Giá: 20.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Bắp Xào Bơ', 20000, 'https://i.ytimg.com/vi/XiW-cEqY7PE/maxresdefault.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+
+            <div class="menu-item">
+                <img src="https://cdn.hanoijourney.com/wp-content/uploads/2017/06/image1.png" alt="Bánh Giò">
+                <h3>Bánh Giò</h3>
+                <p>Giá: 15.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Bánh Giò', 15000, 'https://cdn.hanoijourney.com/wp-content/uploads/2017/06/image1.png')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.E-8cr2F12OLfJeUaL7QtBgHaEJ&pid=Api&P=0&h=180"
+                    alt="Bánh Cam">
+                <h3>Bánh Cam</h3>
+                <p>Giá: 10.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Bánh Cam', 10000, 'https://tse4.mm.bing.net/th?id=OIP.E-8cr2F12OLfJeUaL7QtBgHaEJ&pid=Api&P=0&h=180')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://cdn.tgdd.vn/Files/2017/10/03/1029885/cach-lam-pho-mai-que-beo-ngay-gion-ngon-202203151423463828.jpg"
+                    alt="Phô Mai Que">
+                <h3>Phô Mai Que</h3>
+                <p>Giá: 30.000đ</p>
+                <button
+                    onclick="themVaoGioHang('Phô Mai Que', 30000, 'https://cdn.tgdd.vn/Files/2017/10/03/1029885/cach-lam-pho-mai-que-beo-ngay-gion-ngon-202203151423463828.jpg')">Thêm
+                    Vào Giỏ Hàng</button>
+            </div>
+        </div>
+    </section>
+    <script>
+         function showSection(sectionId) {
+            const sections = document.querySelectorAll('.menu-section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    
+        document.addEventListener('DOMContentLoaded', () => {
+           
+            showSection('tra-sua');
+      
+     
+            document.body.addEventListener("click", (event) => {
+                const message = document.createElement("div");
+                message.classList.add("lucky-message");
+                message.style.left = `${event.pageX}px`;
+                message.style.top = `${event.pageY}px`;
+                message.innerText = messages[Math.floor(Math.random() * messages.length)];
+    
+                document.body.appendChild(message);
+    
+                setTimeout(() => {
+                    message.remove();
+                }, 3000);
+            });
+        });
+    </script>
+    
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2>Giới thiệu</h2>
+                    <p>Trở về tuổi thơ tự hào mang đến những ly trà sữa không chỉ thơm ngon mà còn đảm bảo chất lượng và
+                        sức
+                        khỏe cho người tiêu dùng. Với sự kết hợp hài hòa giữa lá trà xanh nguyên chất từ những vùng núi
+                        cao
+                        nổi tiếng như Đài Loan và Nhật Bản cùng sữa tươi hảo hạng, chúng tôi cam kết mang lại trải
+                        nghiệm vị
+                        giác tinh tế, đậm đà và đầy hoài niệm. Hãy đến Trở về tuổi thơ, nơi mà mỗi ngụm trà không chỉ là
+                        thức uống, mà còn là chuyến hành trình về những kỷ niệm đẹp của tuổi thơ.</p>
+                </div>
+                <div class="footer-section contact">
+                    <h2>Liên hệ</h2>
+                    <ul>
+                        <li>Trở về tuổi thơ</li>
+                        <li>Số ĐKKD: 41E8052150, cấp 28/09/2024</li>
+                        <li>MST: 0302166322-002</li>
+                        <li>Hotline: 0338828125</li>
+                        <li>Địa chỉ: 499b Đường Kênh Tân Hóa, Phường Hòa Thạnh, Quận Tân Phú,</li>
+                    </ul>
+                </div>
+                <div class="footer-section social">
+                    <h2>Kết nối với chúng tôi</h2>
+                    <div class="social-icons">
+                        <a href="#"><img
+                                src="https://static.vecteezy.com/system/resources/previews/016/716/450/original/tiktok-icon-free-png.png"
+                                alt="TikTok"></a>
+                        <a href="#"><img
+                                src="https://static.vecteezy.com/system/resources/previews/016/716/481/non_2x/facebook-icon-free-png.png"
+                                alt="Facebook"></a>
+                        <a href="#"><img
+                                src="https://1.bp.blogspot.com/-hY5-pNrOcKw/XeI_00cpCgI/AAAAAAAAF4A/J7jS49V8kNozycy0PgY6wfc7SUU9gulTgCLcBGAsYHQ/s1600/Youtube-Icon-square-2340x2340.png"
+                                alt="YouTube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Trở về tuổi thơ. Bản quyền thuộc về chúng tôi.</p>
+            </div>
+        </footer>
+    </body>
+    </html>

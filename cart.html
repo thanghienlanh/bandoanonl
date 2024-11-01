@@ -4,78 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giỏ Hàng</title>
-    <link rel="stylesheet" href="phongcach.css">
+    <link rel="stylesheet" href="cart.css">
 </head>
 <body>
     <header>
         <h1>Giỏ Hàng của Bạn</h1>
     </header>
     
-    <section id="cart-items-section">
-        <div id="cart-items"></div>
-              <button id="checkout-button" onclick="thanhToan()">Thanh Toán</button>
-        <p id="success-message" style="display: none; color: green; font-weight: bold;"></p>
+    <section id="gio-hang-muc">
+        <div id="gio-hang">
+            <div class="san-pham-gio-hang">
+                <div class="hinh-anh-san-pham">
+                    <img src="https://congthucphache.com/wp-content/uploads/2023/09/Tra-sua-truyen-thong.png" alt="Sản phẩm 1">
+                </div>
+                <div class="chi-tiet-san-pham">
+                    <p>Tên sản phẩm: Sản phẩm 1</p>
+                    <p>Giá: 50,000đ</p>
+                    <p>Số lượng: 2</p>
+                </div>
+            </div>
+
+            <div class="san-pham-gio-hang">
+                <div class="hinh-anh-san-pham">
+                    <img src="https://cafemoc.com.vn/wp-content/uploads/2023/08/67388701_623935038015136_1489320721967135771_n.jpg" alt="Sản phẩm 2">
+                </div>
+                <div class="chi-tiet-san-pham">
+                    <p>Tên sản phẩm: Sản phẩm 2</p>
+                    <p>Giá: 30,000đ</p>
+                    <p>Số lượng: 1</p>
+                </div>
+            </div>
+        </div>
+
+        <button id="nut-thanh-toan">Thanh Toán</button>
+        <p id="thong-bao-thanh-cong" style="display: none;">Thanh toán thành công! Tổng tiền: 0đ</p>
     </section>
 
-    <button onclick="quayLaiTrangTruoc()">Quay lại trang trước</button>
-
-    <script>
-        let totalPrice = 0; // Declare totalPrice globally to access it in thanhToan()
-
-        function loadCartData() {
-            const cartData = localStorage.getItem('cart');
-            const cart = cartData ? JSON.parse(cartData) : {};
-
-            const cartItemsDiv = document.getElementById('cart-items');
-            const cartTotal = document.getElementById('cart-total');
-
-            cartItemsDiv.innerHTML = '';  
-            totalPrice = 0; // Reset total price each time the cart is loaded
-
-            for (const [itemName, itemData] of Object.entries(cart)) {
-                totalPrice += itemData.price * itemData.quantity;
-
-                const itemDiv = document.createElement('div');
-                itemDiv.classList.add('cart-item');
-                itemDiv.innerHTML = `
-                    <div class="cart-item-image">
-                        <img src="${itemData.image}" alt="${itemName}">
-                    </div>
-                    <div class="cart-item-details">
-                        <p>${itemName}</p>
-                        <p>Giá: ${itemData.price}đ</p>
-                        <p>Số lượng: ${itemData.quantity}</p>
-                    </div>
-                `;
-
-                cartItemsDiv.appendChild(itemDiv);
-            }
-
-            cartTotal.innerText = `Tổng giá: ${totalPrice}đ`;
-        }
-
-        function thanhToan() {
-            // Clear the cart data from localStorage
-            localStorage.removeItem('cart');
-
-            // Display success message with the total price
-            const successMessage = document.getElementById('success-message');
-            successMessage.innerText = `Thanh toán thành công! Tổng tiền: ${totalPrice}đ`;
-            successMessage.style.display = 'block';
-
-            // Clear cart items display
-            const cartItemsDiv = document.getElementById('cart-items');
-            cartItemsDiv.innerHTML = '';
-            const cartTotal = document.getElementById('cart-total');
-            cartTotal.innerText = 'Tổng giá: 0đ';
-        }
-
-        function quayLaiTrangTruoc() {
-            window.history.back();
-        }
-
-        document.addEventListener('DOMContentLoaded', loadCartData);
-    </script>
+    <div class="tro-ve-trang-truoc">
+        <a href="index.html">Quay lại trang trước</a>
+    </div>
     
 </body>
 </html>

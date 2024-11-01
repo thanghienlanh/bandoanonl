@@ -57,12 +57,10 @@ header {
 }
 
 .thanh-dieu-huong {
-    background-color: #001f33;
-    padding: 10px 0;
-    font-size: 20px;
+    background-color: #031a29;
+     font-size: 20px;
     margin-bottom: 0;
-    border-bottom: 2px solid #003366;
-}
+ }
 
 .phan {
     padding: 10px 10px;
@@ -90,60 +88,199 @@ header {
     padding: 10px 15px;
     display: inline-block;
     font-size: 1.2em;
-    transition: background-color 1s ease, padding 1s ease; 
+    transition: background-color 1s ease, padding 1s ease;  
 }
-
 .thanh-dieu-huong ul li a:hover {
     background-color: #00ccff;
     color: #000;
     padding: 5px 10px;
     border-radius: 5px;
 }
-@keyframes color-change {
-    0% {
-        color: #00ccff;
-    }
-    50% {
-        color: #f3e4e4;
-    }
-    100% {
-        color: #00ccff;
-    }
-}
 
 .thanh-dieu-huong ul li .noi-dung-menu-con {
     display: none;
     position: absolute;
     background-color: #001f33;
-    min-width: 160px;  
-    padding: 5px 0;
-    z-index: 1;
+    min-width: 160px;
 }
 
 .thanh-dieu-huong ul li .noi-dung-menu-con a {
     color: white;
-    padding: 8px 12px;  
+    padding: 12px 16px;
     text-decoration: none;
     display: block;
-    font-size: 0.9em; 
+    margin-bottom: 5px;
 }
 
-.thanh-dieu-huong ul li:hover .noi-dung-menu-con,
-.thanh-dieu-huong ul li:focus-within .noi-dung-menu-con {
+.thanh-dieu-huong ul li .noi-dung-menu-con a:last-child {
+    margin-bottom: 0;
+}
+
+.thanh-dieu-huong ul li:hover .noi-dung-menu-con {
     display: block;
+    font-size: 10px;
+}
+.mo-ta-cong-viec {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-.khu-vuc-cua-hang {
+.mo-ta-cong-viec h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mo-ta-cong-viec h3 {
+    color: #4CAF50;
+    margin-top: 20px;
+}
+
+.mo-ta-cong-viec ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.mo-ta-cong-viec ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.nut-nop-ho-so {
+    display: inline-block;
+    background-color: #76b852;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.nut-nop-ho-so:hover {
+    background-color: #4CAF50;
+}
+
+.tro-ve-trang-chu {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.tro-ve-trang-chu a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tro-ve-trang-chu a:hover {
+    text-decoration: underline;
+}
+
+.chan-trang {
+    background-color: #001f33;
+    color: white;
+    padding: 40px 0;
+}
+
+
+footer {
+    background-color: #001f33;
+    color: white;
     padding: 40px 20px;
     text-align: center;
-    background-color: #f9f9f9;
 }
 
-.chu-chay-nhay {
-    font-size: 2em;
-    color: #003366;
-    animation: bounce 1.5s infinite;
-    margin-bottom: 20px;
+.noi-dung-chan-trang {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gioi-thieu, .lien-he, .ket-noi {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+}
+
+.gioi-thieu h2, .lien-he h2, .ket-noi h2 {
+    color: #00ccff;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.gioi-thieu p {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.lien-he ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.lien-he ul li {
+    margin-bottom: 10px;
+}
+
+.bieu-tuong-mang-xa-hoi a img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.bieu-tuong-mang-xa-hoi a img:hover {
+    transform: scale(1.1);
+}
+
+.chan-trang-duoi {
+    text-align: center;
+    padding-top: 20px;
+    color: #ccc;
+    border-top: 1px solid #00ccff;
+    margin-top: 20px;
+    font-size: 12px;
+}
+.nut-nop-ho-so {
+    color: #f0130b;
+    text-decoration: none;  
+    font-weight: bold;  
+}
+
+.tro-ve-trang-chu a {
+    color: #f0130b;
+    text-decoration: none; 
+    font-weight: bold;  
+}
+
+
+button,
+.nut-dat-hang {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+button:hover,
+.nut-dat-hang:hover {
+    background-color: #002244;
 }
 
 .chu-chay {
@@ -167,120 +304,14 @@ header {
     }
 }
 
-.muc-cua-hang {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: white;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    flex-wrap: wrap;
-}
-
-.hinh-anh-cua-hang {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 10px;
-    margin-right: 20px;
-}
-
-.thong-tin-cua-hang {
-    text-align: left;
-    max-width: 500px;
-}
-
-.thong-tin-cua-hang h3 {
-    color: #003366;
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.thong-tin-cua-hang p {
-    color: #555;
-    margin: 5px 0;
-}
-
-.thong-tin-cua-hang ul {
-    list-style-type: disc;
-    margin: 10px 0;
-    padding-left: 20px;
-    color: #555;
-}
-
-.thong-tin-cua-hang ul li {
-    margin-bottom: 5px;
-}
-
-.tro-ve-trang-chu {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.tro-ve-trang-chu a {
-    color: #00ccff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.tro-ve-trang-chu a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    background-color: #001f33;
-    color: white;
-    padding: 40px 20px;
-    margin-top: 40px;
-    font-size: 14px;
-}
-
-.noi-dung-chan-trang {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    text-align: left;
-    gap: 20px;
-}
-
-.gioi-thieu, .lien-he, .ket-noi {
-    flex: 1;
-    min-width: 250px;
-    max-width: 300px;
-    margin-bottom: 20px;
-}
-
-.gioi-thieu h2, .lien-he h2, .ket-noi h2 {
-    color: #00ccff;
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.gioi-thieu p, .lien-he ul, .lien-he li, .ket-noi ul, .ket-noi li {
-    color: #ccc;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
 .bieu-tuong-mang-xa-hoi a img {
     width: 40px;
     height: auto;
+    margin-right: 10px;
     transition: transform 0.3s ease;
 }
 
 .bieu-tuong-mang-xa-hoi a img:hover {
     transform: scale(1.1);
     background-color: #e0e0e6;
-}
-
-.chan-trang-duoi {
-    text-align: center;
-    padding-top: 20px;
-    color: #ccc;
-    border-top: 1px solid #00ccff;
-    margin-top: 20px;
 }

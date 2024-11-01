@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trở về tuổi thơ - Đăng Ký</title>
+    <link rel="stylesheet" href="menutong.css">
+ </head>
+<body>
+    <body>
+        <header>
+            <div class="top-bar">
+                <div class="brand-info">
+                    <img src="logotrasua.jpg" alt="Trở về tuổi thơ Logo" class="logo">
+                    <div class="animated-text">
+                        Hệ thống Trà Sữa Trở về tuổi thơ
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <p><i class="far fa-clock"></i> 8:00-22:30 | Hotline: 0338828125</p>
+                </div>
+                <div class="user-options">
+                    <p id="welcome-message">Xin chào, khách!</p>
+                    <a href="dangki.html">Đăng nhập / Đăng ký</a>
+                    <a href="cart.html">Giỏ hàng / Sản phẩm</a>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li class="dropdown">
+                        <a href="#">Menu</a>
+                        <ul class="dropdown-content">
+                            <li><a href="menutrasua.html">Trà sữa</a></li>
+                            <li><a href="menunuocep.html">Nước ép</a></li>
+                            <li><a href="menuanvat.html">Ăn vặt</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cuahang.html">Cửa hàng</a></li>
+                    <li><a href="sukienkhuyenmai.html">Sự kiện khuyến mãi </a></li>
+                    <li><a href="tuyendung.html">Tuyển dụng</a></li>
+                    <li><a href="vechungtoi.html">Về chúng tôi</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="tra-sua" class="section menu-section" style="display: none;">
+            <h2>Thực Đơn Nước Ép</h2>
+            <div class="menu-container">
+                <div id="nuoc-ep-tao" class="menu-item">
+                    <img src="https://img.tastykitchen.vn/resize/764x-/2021/04/15/nuoc-ep-tao-le-3-a8a3.jpg"
+                        alt="Nước Ép Táo">
+                    <h3>Nước Ép Táo</h3>
+                    <p>Giá: 30.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Nước Ép Táo', 30000, 'https://cdn.nhathuoclongchau.com.vn/unsafe/800x0/https://cms-prod.s3-sgn09.fptcloud.com/nuoc_ep_tao_co_tac_dung_gi_nuoc_ep_tao_mix_voi_gi_cho_giau_dinh_duong_1_9ad02a8c5f.jpg')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+
+                <div id="nuoc-ep-nho" class="menu-item">
+                    <img src="https://quangon.vn/resources/2020/07/29/cach-tu-lam-nuoc-ep-nho-1.jpg" alt="Nước Ép Nho">
+                    <h3>Nước Ép Nho</h3>
+                    <p>Giá: 34.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Nước Ép Nho', 34000, 'https://truejuice.vn/articles/wp-content/uploads/2021/04/nuoc-ep-nho-co-tac-dung-gi-1024x683.jpg')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+
+                <div id="nuoc-ep-dau" class="menu-item">
+                    <img src="https://adiva.com.vn/wp-content/uploads/2019/07/nuoc-ep-dau-tay-lam-dep-da.jpg"
+                        alt="Nước Ép Dâu">
+                    <h3>Nước Ép Dâu</h3>
+                    <p>Giá: 32.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Nước Ép Dâu', 32000, 'https://truejuice.vn/articles/wp-content/uploads/2021/05/nuoc-ep-dau-co-tac-dung-gi.jpg')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+
+                <div id="nuoc-ep-buoi" class="menu-item">
+                    <img src="https://quangon.vn/resources/2022/02/17/cong-thuc-nuoc-ep-buoi-chum-2.jpeg"
+                        alt="Nước Ép Bưởi">
+                    <h3>Nước Ép Bưởi</h3>
+                    <p>Giá: 35.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Nước Ép Bưởi', 35000, 'https://truejuice.vn/articles/wp-content/uploads/2021/05/nuoc-ep-buoi-xanh-truejuice.jpg')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://quangon.vn/resources/2020/10/31/do-uong-xoai-thanh-long--9.jpg"
+                        alt="Nước Ép Thanh Long">
+                    <h3>Nước Ép Thanh Long</h3>
+                    <p>Giá: 28.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Nước Ép Thanh Long', 28000, 'https://truejuice.vn/articles/wp-content/uploads/2021/05/nuoc-ep-thanh-long-mix-dua-truejuice.jpg')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+                <div id="nuoc-ep-le" class="menu-item">
+                    <img src="https://quangon.vn/resources/2021/11/11/cong-thuc-nuoc-ep-oi-hong-1.jpg" alt="Nước Ép Lê">
+                    <h3>Nước Ép Ổi</h3>
+                    <p>Giá: 30.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Nước Ép Lê', 30000, 'https://truejuice.vn/articles/wp-content/uploads/2021/04/nuoc-ep-le-giam-can.jpg')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+                <div id="nuoc-ep-ca-rot" class="menu-item">
+                    <img src="https://truejuice.vn/articles/wp-content/uploads/2020/04/nuoc-ep-ca-rot-truejuice-1.jpg"
+                        alt="Nước Ép Cà Rốt">
+                    <h3>Nước Ép Cà Rốt</h3>
+                    <p>Giá: 28.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Nước Ép Cà Rốt', 28000, 'https://bizweb.dktcdn.net/100/421/036/files/nguyen-lieu-che-bien-nuoc-ep-carot.jpg?v=1617093099366')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://truejuice.vn/articles/wp-content/uploads/2021/05/nuoc-ep-cam.jpg"
+                        alt="Nước Ép Cam">
+                    <h3>Nước Ép Cam</h3>
+                    <p>Giá: 30.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Nước Ép Cam', 30000, 'https://file.hstatic.net/200000031322/file/9_93026d56b61f46c1a435755ddee3d3cd_grande.gif')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://truejuice.vn/articles/wp-content/uploads/2021/01/nuoc-ep-dua-hau-truejuice-1.jpg"
+                        alt="Nước Ép Dưa Hấu">
+                    <h3>Nước Ép Dưa Hấu</h3>
+                    <p>Giá: 25.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Nước Ép Dưa Hấu', 25000, 'https://cookbeo.com/media/2020/12/nuoc-ep-dua-hau/coc-nuoc-ep-dua-hau.jpg')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+                <div id="nuoc-ep-ca-rot" class="menu-item">
+                    <img src="https://xuongcaphe.com/wp-content/uploads/2022/07/Nuoc-ep-Thom.webp" alt="Nước Ép Thơm">
+                    <h3>Nước Ép Thơm</h3>
+                    <p>Giá: 28.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Nước Ép Cà Rốt', 28000, 'https://tandoorvietnam.com/wp-content/uploads/2020/06/Pineapple-juice.jpg')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://truejuice.vn/articles/wp-content/uploads/2021/03/nuoc-ep-luu-truejuice.jpg"
+                        alt="Nước Ép Lê Táo Chanh Dây">
+                    <h3>Nước Ép Lê Táo Chanh Dây</h3>
+                    <p>Giá: 45.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Nước Ép Lê Táo Chanh Dây', 45000, 'https://truejuice.vn/articles/wp-content/uploads/2021/05/nuoc-ep-chanh-day-ho-tro-giam-viem-1024x963.jpg')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://cdn.phunuvagiadinh.vn/thuytrang_btv/auto/19_8_2022/277582140_3117845871810417_7276550915401974767_n-2022-08-19-13-07.jpg"
+                        alt="Nước Ép Cói Xay">
+                    <h3>Nước Ép Dừa</h3>
+                    <p>Giá: 28.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Nước Ép Cói Xay', 28000, 'https://cdn.pastaxi-manager.onepas.vn/content/uploads/articles/hoamkt35/Blog/N%C6%B0%E1%BB%9Bc%20%C3%A9p/New%20folder%20(2)/nuoc-ep-coc.jpg')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://quangon.vn/resources/2020/05/25/cach-lam-nuoc-ep-tao--4.jpg"
+                        alt="Nước Ép Táo Bơ">
+                    <h3>Nước Ép Táo Bơ</h3>
+                    <p>Giá: 40.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Nước Ép Táo Bơ', 40000, 'https://truejuice.vn/articles/wp-content/uploads/2021/03/nuoc-ep-tao-ca-rot-truejuice-1024x576.jpg')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://quangon.vn/resources/2022/03/16/cong-thuc-nuoc-ep-dua-can-tay-1.jpeg"
+                        alt="Nước Ép Cần Tây">
+                    <h3>Nước Ép Cần Tây</h3>
+                    <p>Giá: 38.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Nước Ép Cần Tây', 38000, 'https://cdn.nguyenkimmall.com/images/detailed/598/dep-da-dep-dang-chi-voi-nuoc-ep-rau-can-tay-thumbnail.jpg')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://quangon.vn/resources/2020/07/29/cach-tu-lam-nuoc-ep-nho-1.jpg"
+                        alt="Nước Ép Nho Đen">
+                    <h3>Nước Ép Nho Đen</h3>
+                    <p>Giá: 32.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Nước Ép Nho Đen', 32000, 'https://truejuice.vn/articles/wp-content/uploads/2021/04/cach-lam-nuoc-ep-nho-tu-may-xay-sinh-to.jpg')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            function showSection(sectionId) {
+          
+                const sections = document.querySelectorAll('.menu-section');
+                sections.forEach(section => {
+                    section.style.display = 'none';
+                });
+         
+                document.getElementById(sectionId).style.display = 'block';
+            }
+         
+            document.addEventListener('DOMContentLoaded', function() {
+                showSection('tra-sua');
+            });
+        </script>
+        
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2>Giới thiệu</h2>
+                    <p>Trở về tuổi thơ tự hào mang đến những ly trà sữa không chỉ thơm ngon mà còn đảm bảo chất lượng và
+                        sức
+                        khỏe cho người tiêu dùng. Với sự kết hợp hài hòa giữa lá trà xanh nguyên chất từ những vùng núi
+                        cao
+                        nổi tiếng như Đài Loan và Nhật Bản cùng sữa tươi hảo hạng, chúng tôi cam kết mang lại trải
+                        nghiệm vị
+                        giác tinh tế, đậm đà và đầy hoài niệm. Hãy đến Trở về tuổi thơ, nơi mà mỗi ngụm trà không chỉ là
+                        thức uống, mà còn là chuyến hành trình về những kỷ niệm đẹp của tuổi thơ.</p>
+                </div>
+                <div class="footer-section contact">
+                    <h2>Liên hệ</h2>
+                    <ul>
+                        <li>Trở về tuổi thơ</li>
+                        <li>Số ĐKKD: 41E8052150, cấp 28/09/2024</li>
+                        <li>MST: 0302166322-002</li>
+                        <li>Hotline: 0338828125</li>
+                        <li>Địa chỉ: 499b Đường Kênh Tân Hóa, Phường Hòa Thạnh, Quận Tân Phú,</li>
+                    </ul>
+                </div>
+                <div class="footer-section social">
+                    <h2>Kết nối với chúng tôi</h2>
+                    <div class="social-icons">
+                        <a href="#"><img
+                                src="https://static.vecteezy.com/system/resources/previews/016/716/450/original/tiktok-icon-free-png.png"
+                                alt="TikTok"></a>
+                        <a href="#"><img
+                                src="https://static.vecteezy.com/system/resources/previews/016/716/481/non_2x/facebook-icon-free-png.png"
+                                alt="Facebook"></a>
+                        <a href="#"><img
+                                src="https://1.bp.blogspot.com/-hY5-pNrOcKw/XeI_00cpCgI/AAAAAAAAF4A/J7jS49V8kNozycy0PgY6wfc7SUU9gulTgCLcBGAsYHQ/s1600/Youtube-Icon-square-2340x2340.png"
+                                alt="YouTube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Trở về tuổi thơ. Bản quyền thuộc về chúng tôi.</p>
+            </div>
+        </footer>
+    </body>
+    </html>

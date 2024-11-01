@@ -3,65 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuyển dụng</title>
+    <title>Tuyen dung</title>
     <link rel="stylesheet" href="formtuyendung.css">
 </head>
 <body>
   
     <header>
-        <h1 class="header-title">Tuyển dụng</h1>
+        <h1 class="tieu-de-header">Tuyen dung</h1>
          
-        <div class="back-link">
-            <a href="javascript:history.back()">&#60; Quay lại</a>
+        <div class="link-quay-lai">
+            <a href="javascript:history.back()">&#60; Quay lai</a>
         </div>
     </header>
  
-    <section class="form-section">
+    <section class="phan-form">
         <form action="#" method="post">
         
-            <div class="form-group">
-                <label for="name">Họ và tên</label>
+            <div class="nhom-form">
+                <label for="name">Ho va ten</label>
                 <input type="text" id="name" name="name" required>
             </div>
-            <div class="form-group">
-                <label for="email">Địa chỉ email</label>
+            <div class="nhom-form">
+                <label for="email">Dia chi email</label>
                 <input type="email" id="email" name="email" required>
             </div>
-            <div class="form-group">
-                <label for="phone">Số điện thoại</label>
+            <div class="nhom-form">
+                <label for="phone">So dien thoai</label>
                 <input type="tel" id="phone" name="phone" required>
             </div>
-            <div class="form-group">
-                <label for="description">Mô tả</label>
+            <div class="nhom-form">
+                <label for="description">Mo ta</label>
                 <textarea id="description" name="description" rows="4" required></textarea>
             </div>
-            <div class="form-group">
-                <label for="intro-letter">Thư giới thiệu</label>
+            <div class="nhom-form">
+                <label for="intro-letter">Thu gioi thieu</label>
                 <textarea id="intro-letter" name="intro-letter" rows="4" required></textarea>
             </div>
  
-            <div class="form-group">
-                <label for="cv">Chọn file CV</label>
+            <div class="nhom-form">
+                <label for="cv">Chon file CV</label>
                 <input type="file" id="cv" name="cv" accept=".pdf" required>
             </div>
  
-            <div class="form-group">
-                <label>Giới tính</label>
-                <div class="radio-group">
+            <div class="nhom-form">
+                <label>Gioi tinh</label>
+                <div class="nhom-radio">
                     <input type="radio" id="male" name="gender" value="Nam" required>
                     <label for="male">Nam</label>
-                    <input type="radio" id="female" name="gender" value="Nữ" required>
-                    <label for="female">Nữ</label>
+                    <input type="radio" id="female" name="gender" value="Nu" required>
+                    <label for="female">Nu</label>
                 </div>
             </div> 
-            <div class="form-group">
-                <label>Cam kết</label>
-                <div class="checkbox-group">
+            <div class="nhom-form">
+                <label>Cam ket</label>
+                <div class="nhom-checkbox">
                     <input type="checkbox" id="confirm" name="confirm" required>
-                    <label for="confirm">Tôi xin xác nhận bản khai trên của tôi là hoàn toàn chính xác và đúng sự thật.</label>
+                    <label for="confirm">Toi xin xac nhan ban khai tren cua toi la hoan toan chinh xac va dung su that.</label>
                 </div>
             </div>
-            <button type="submit" class="submit-button">Gửi thông tin</button>
+            <button type="submit" class="nut-gui">Gui thong tin</button>
         </form>
     </section>
 </body>

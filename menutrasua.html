@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trở về tuổi thơ - Đăng Ký</title>
+    <link rel="stylesheet" href="menutong.css">
+ </head>
+<body>
+    <body>
+        <header>
+            <div class="top-bar">
+                <div class="brand-info">
+                    <img src="logotrasua.jpg" alt="Trở về tuổi thơ Logo" class="logo">
+                    <div class="animated-text">
+                        Hệ thống Trà Sữa Trở về tuổi thơ
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <p><i class="far fa-clock"></i> 8:00-22:30 | Hotline: 0338828125</p>
+                </div>
+                <div class="user-options">
+                    <p id="welcome-message">Xin chào, khách!</p>
+                    <a href="dangki.html">Đăng nhập / Đăng ký</a>
+                    <a href="cart.html">Giỏ hàng / Sản phẩm</a>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li class="dropdown">
+                        <a href="#">Menu</a>
+                        <ul class="dropdown-content">
+                            <li><a href="menutrasua.html">Trà sữa</a></li>
+                            <li><a href="menunuocep.html">Nước ép</a></li>
+                            <li><a href="menuanvat.html">Ăn vặt</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cuahang.html">Cửa hàng</a></li>
+                    <li><a href="sukienkhuyenmai.html">Sự kiện khuyến mãi </a></li>
+                    <li><a href="tuyendung.html">Tuyển dụng</a></li>
+                    <li><a href="vechungtoi.html">Về chúng tôi</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="tra-sua" class="section menu-section" style="display: none;">
+            <h2>Thực Đơn Trà Sữa</h2>
+
+            <div class="menu-container">
+                <div class="menu-item">
+                    <img src="https://cafemoc.com.vn/wp-content/uploads/2023/08/67388701_623935038015136_1489320721967135771_n.jpg"
+                        alt="Trà Sữa Đường Đen">
+                    <h3>Trà Sữa Đường Đen</h3>
+                    <p>Giá: 88.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Trà Sữa Đường Đen', 88000, 'https://ghiennauan.info/wp-content/uploads/2022/03/cach-nau-tra-sua-tran-chau-duong-den.jpg')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://congthucphache.com/wp-content/uploads/2023/09/Tra-sua-truyen-thong.png"
+                        alt="Trà Sữa Dừa">
+                    <h3>Trà Sữa Dừa</h3>
+                    <p>Giá: 90.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Trà Sữa Dừa', 90000, 'https://bepos.io/wp-content/uploads/2023/01/kd3.jpg')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/414/451/products/tra-su-a-matcha.jpg?v=1685980979770"
+                        alt="Trà Sữa Matcha">
+                    <h3>Trà Sữa Matcha</h3>
+                    <p>Giá: 85.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Trà Sữa Matcha', 85000, 'https://dayphache.edu.vn/wp-content/uploads/2018/02/tra-sua-matcha.jpg')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://mccoffeetanphu.com/uploads/source/mccoffee/yogurt-dau-tay-c3f0bc505dee45e5b8571af599d33856-master.webp"
+                        alt="Trà Sữa Dâu Tây">
+                    <h3>Trà Sữa Dâu Tây</h3>
+                    <p>Giá: 90.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Trà Sữa Dâu Tây', 90000, 'https://cdn.nguyenkimmall.com/images/detailed/746/cach-lam-tra-sua-dau-5.jpg.jpg')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="http://saigonoicafe.com/images_upload/KiWi%20Tea.jpg" alt="Trà Sữa Kiwi">
+                    <h3>Trà Sữa Kiwi</h3>
+                    <p>Giá: 88.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Trà Sữa Kiwi', 88000, 'https://kinhdofood.com/wp-content/uploads/2022/05/Cach-lam-tra-sua-kiwi-img_627486e2d1041.png')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5ZkkUEJB7KV3n87hCiip41zXlPqneJimBPn4mhEWX297EfoBQ5x96xTzqmGthuXI97RUyiWwISC38iy_FWYft8Qj4-YADk502VE0C-HWyB34QvIKPo7mjstEvJ7qgLzBNc7BFH32v-69VnCi61sgjVG1KEkjUdf49Yx1eGRloiBNCOGEiiDPCrrdp/s1280/z3603472710041_39f2afcf6520579004a236d477f09274.jpg"
+                        alt="Trà Sữa Khoai Môn">
+                    <h3>Trà Sữa Khoai Môn</h3>
+                    <p>Giá: 90.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Trà Sữa Khoai Môn', 90000, 'https://cdn.tgdd.vn/2021/06/CookProductThumb/620-620x620-73.jpg')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://tamlong.com.vn/wp-content/uploads/black-mik-tea-3-1.jpg" alt="Trà Sữa Earl Grey">
+                    <h3>Trà Sữa Earl Grey</h3>
+                    <p>Giá: 95.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Trà Sữa Earl Grey', 95000, 'http://file.hstatic.net/1000339999/article/untitled_design_510df43ecd1344ca9fbcdd7daad4cd63.png')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://tramcoffee.vn/wp-content/uploads/2022/02/77de98b2a6586a063349.jpg"
+                        alt="Trà Sữa Hồng Đào">
+                    <h3>Trà Sữa Hồng Đào</h3>
+                    <p>Giá: 88.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Trà Sữa Hồng Đào', 88000, 'https://theteahouse.com.vn/wp-content/uploads/2021/08/tra-dao-tth-1200x1200.png')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://product.hstatic.net/200000691907/product/tra-sua-o-long_975ac34fac2548588a4beb5a7f274a7a_master.jpg"
+                        alt="Trà Sữa Ô Long">
+                    <h3>Trà Sữa Ô Long</h3>
+                    <p>Giá: 92.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Trà Sữa Ô Long', 92000, 'https://bizweb.dktcdn.net/100/004/714/files/cach-lam-tra-sua-olong-nhai-1-jpeg.jpg?v=1682424915375')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="http://media.vietq.vn/files/Ctvduong/2017/07/02/cach-lam-tra-sua-Thai-5.jpg"
+                        alt="Trà Sữa Thái Xanh">
+                    <h3>Trà Sữa Thái Xanh</h3>
+                    <p>Giá: 88.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Trà Sữa Thái Xanh', 88000, 'https://kinhdofood.com/wp-content/uploads/2022/06/cach-lam-tra-sua-thai-img_62b97785ddb08-1000x563.jpg')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://toigingiuvedep.vn/wp-content/uploads/2021/06/hinh-anh-tra-sua-tran-chau-dep-mat.jpg"
+                        alt="Trà Sữa Socola">
+                    <h3>Trà Sữa Socola</h3>
+                    <p>Giá: 92.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Trà Sữa Socola', 92000, 'https://cdn.tgdd.vn/2021/08/CookRecipe/Avatar/tra-sua-socola-tran-chau-thumbnail.jpg')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://khonguyenlieu.com/wp-content/uploads/2018/10/cach-lam-viet-quat-da-xay.jpg"
+                        alt="Trà Sữa Việt Quất">
+                    <h3>Trà Sữa Việt Quất</h3>
+                    <p>Giá: 85.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Trà Sữa Việt Quất', 85000, 'https://sieuthinguyenlieu.com/assets/uploads/images/bUFB6cf0o0xr_blueberry-smoothie-master.jpg')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://rovinco.vn/wp-content/uploads/2022/06/Cafe-sua-tuoi-suong-sao-hat-e-1-762x1024.jpg"
+                        alt="Trà Sữa Sương Sáo">
+                    <h3>Trà Sữa Sương Sáo</h3>
+                    <p>Giá: 90.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Trà Sữa Sương Sáo', 90000, 'https://thegioiamthuc.com/wp-content/uploads/2018/03/tu-lam-tra-sua-suong-sao-cuc-ngon-tai-nha-1.jpg')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://product.hstatic.net/200000815175/product/tra_sua_tran_chau_duong_nau_226dc071974d4f96b3d6358115ec2ecb_1024x1024.png"
+                        alt="Trà Sữa Trân Châu Xoài">
+                    <h3>Trà Sữa Trân Châu Xoài</h3>
+                    <p>Giá: 85.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Trà Sữa Trân Châu Xoài', 85000, 'https://t.vietgiaitri.com/2024/6/9/cach-pha-che-tra-sua-tran-chau-xoai-ngon-ngot-thom-mat-uong-cang-me-600x432-47c-7196433.webp')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="http://congthucphache.com/wp-content/uploads/2019/12/Picture2.png"
+                        alt="Trà Sữa Matcha Đậu Đỏ">
+                    <h3>Trà Sữa Matcha Đậu Đỏ</h3>
+                    <p>Giá: 88.000đ</p>
+                    <button
+                        onclick="themVaoGioHang('Trà Sữa Matcha Đậu Đỏ', 88000, 'https://daylambanhngon.com/public/backend/filemanager/source/trasuamatchadaudo/9cc108fd5f8513df18fc8f42f7effdeb.jpg')">Thêm
+                        Vào Giỏ Hàng</button>
+                </div>
+
+            </div>
+        </section>
+
+
+        <script>
+            function showSection(sectionId) {
+          
+                const sections = document.querySelectorAll('.menu-section');
+                sections.forEach(section => {
+                    section.style.display = 'none';
+                });
+         
+                document.getElementById(sectionId).style.display = 'block';
+            }
+         
+            document.addEventListener('DOMContentLoaded', function() {
+                showSection('tra-sua');
+            });
+        </script>
+        
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2>Giới thiệu</h2>
+                    <p>Trở về tuổi thơ tự hào mang đến những ly trà sữa không chỉ thơm ngon mà còn đảm bảo chất lượng và
+                        sức
+                        khỏe cho người tiêu dùng. Với sự kết hợp hài hòa giữa lá trà xanh nguyên chất từ những vùng núi
+                        cao
+                        nổi tiếng như Đài Loan và Nhật Bản cùng sữa tươi hảo hạng, chúng tôi cam kết mang lại trải
+                        nghiệm vị
+                        giác tinh tế, đậm đà và đầy hoài niệm. Hãy đến Trở về tuổi thơ, nơi mà mỗi ngụm trà không chỉ là
+                        thức uống, mà còn là chuyến hành trình về những kỷ niệm đẹp của tuổi thơ.</p>
+                </div>
+                <div class="footer-section contact">
+                    <h2>Liên hệ</h2>
+                    <ul>
+                        <li>Trở về tuổi thơ</li>
+                        <li>Số ĐKKD: 41E8052150, cấp 28/09/2024</li>
+                        <li>MST: 0302166322-002</li>
+                        <li>Hotline: 0338828125</li>
+                        <li>Địa chỉ: 499b Đường Kênh Tân Hóa, Phường Hòa Thạnh, Quận Tân Phú,</li>
+                    </ul>
+                </div>
+                <div class="footer-section social">
+                    <h2>Kết nối với chúng tôi</h2>
+                    <div class="social-icons">
+                        <a href="#"><img
+                                src="https://static.vecteezy.com/system/resources/previews/016/716/450/original/tiktok-icon-free-png.png"
+                                alt="TikTok"></a>
+                        <a href="#"><img
+                                src="https://static.vecteezy.com/system/resources/previews/016/716/481/non_2x/facebook-icon-free-png.png"
+                                alt="Facebook"></a>
+                        <a href="#"><img
+                                src="https://1.bp.blogspot.com/-hY5-pNrOcKw/XeI_00cpCgI/AAAAAAAAF4A/J7jS49V8kNozycy0PgY6wfc7SUU9gulTgCLcBGAsYHQ/s1600/Youtube-Icon-square-2340x2340.png"
+                                alt="YouTube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Trở về tuổi thơ. Bản quyền thuộc về chúng tôi.</p>
+            </div>
+        </footer>
+    </body>
+    </html>
